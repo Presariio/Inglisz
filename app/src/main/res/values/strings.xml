@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">English Quiz</string>
+    <string name="prompt_nickname">Wprowadź nazwę użytkownika</string>
+</resources>
