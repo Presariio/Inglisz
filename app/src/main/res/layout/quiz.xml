@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_above="@id/slowko1"
+        android:text="Tu będzie słówko wylosowane"
+        android:textSize="20sp"
+        android:layout_marginBottom="65dp"/>
+
+    <Button
+        android:id="@+id/slowko1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="1 slowko"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:layout_above="@id/slowko2"
+        />
+
+    <Button
+        android:id="@+id/slowko2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="2 slowko"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:layout_above="@id/slowko3"
+        />
+
+    <Button
+        android:id="@+id/slowko3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:layout_marginBottom="20dp"
+        android:text="3 slowko"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>

@@ -16,19 +16,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:layout_above="@id/nickname"/>
+        android:layout_above="@id/nickname"
+        android:contentDescription="@string/todo" />
 
 
     <EditText
         android:id="@+id/nickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@id/zatwierdz"
         android:layout_centerInParent="true"
         android:layout_marginBottom="10dp"
-        android:layout_above="@id/zatwierdz"
 
+        android:autofillHints=""
         android:hint="@string/prompt_nickname"
-        />
+        android:inputType="text" />
 
 
 
@@ -38,7 +40,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerInParent="true"
-    android:text="Zatwierdź"
+    android:text="@string/zatwierd"
     android:layout_marginBottom="20dp"
     android:textSize="16sp"
     />

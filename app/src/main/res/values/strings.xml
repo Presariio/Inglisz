@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">English Quiz</string>
     <string name="prompt_nickname">Wprowadź nazwę użytkownika</string>
+    <string name="prompt_word">Wpisz słówko Angielskie</string>
+    <string name="zatwierd">Zatwierdź</string>
+    <string name="todo">TODO</string>
+    <string name="prompt_word1">Wpisz słówko Polskie</string>
 </resources>
