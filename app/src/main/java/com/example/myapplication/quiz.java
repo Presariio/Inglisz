@@ -32,12 +32,12 @@ public class quiz extends AppCompatActivity {
         textViewQuestion = findViewById(R.id.text_view_question);
         textViewScore = findViewById(R.id.text_view_score);
         textViewQuestionCount = findViewById(R.id.text_view_question_count);
-        textViewCountDown = findViewById(R.id.);
+        textViewCountDown = findViewById(R.id.text_view_count_down);
         rbGroup = findViewById(R.id.radio_group);
         rb1 = findViewById(R.id.radio_przycisk1);
         rb2 = findViewById(R.id.radio_przycisk2);
         rb3 = findViewById(R.id.radio_przycisk3);
-        buttonConfirmNext = findViewById(R.id.)
+        buttonConfirmNext = findViewById(R.id.button_confirm_next);
 
 
     }
