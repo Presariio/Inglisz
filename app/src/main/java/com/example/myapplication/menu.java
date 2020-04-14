@@ -53,17 +53,17 @@ private Button quiz;
     }
 
 
-    public void openInformation(){
+    private void openInformation(){
         Intent intentInformation = new Intent(this, information.class);
         startActivity(intentInformation);
     }
 
-    public void openAdd(){
+    private void openAdd(){
         Intent intentAdd = new Intent(this, add_word.class);
         startActivity(intentAdd);
     }
 
-    public void openQuiz(){
+    private void openQuiz(){
         Intent intentQuiz = new Intent(this, quiz.class);
         startActivity(intentQuiz);
     }

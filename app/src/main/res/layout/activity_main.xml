@@ -9,15 +9,15 @@
 
     <ImageView
         android:id="@+id/imageview"
-        android:src="@drawable/angielski"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nickname"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:layout_above="@id/nickname"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        android:src="@drawable/angielski" />
 
 
     <EditText
@@ -33,17 +33,14 @@
         android:inputType="text" />
 
 
-
-
     <Button
-    android:id="@+id/zatwierdz"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:text="@string/zatwierd"
-    android:layout_marginBottom="20dp"
-    android:textSize="16sp"
-    />
+        android:id="@+id/zatwierdz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/zatwierd"
+        android:textSize="16sp" />
 
 
 </RelativeLayout>

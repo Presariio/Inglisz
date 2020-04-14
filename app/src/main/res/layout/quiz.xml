@@ -1,61 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="#FFFFFF"
-tools:context=".MainActivity">
-
-
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text_view_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:layout_above="@id/slowko1"
-        android:text="Tu będzie słówko wylosowane"
-        android:textSize="20sp"
-        android:layout_marginBottom="65dp"/>
+        android:text="Score: 0"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/text_view_question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_score"
+        android:text="Pytanie: 1/X"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="00:30"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radio_group"
+        android:layout_marginBottom="16dp"
+        android:text="Tu bedzie pytanie\nTu bedzie pytanie\nTu bedzie pytanie"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/radio_przycisk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opcja 1" />
+
+        <RadioButton
+            android:id="@+id/radio_przycisk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opcja 2" />
+
+        <RadioButton
+            android:id="@+id/radio_przycisk3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opcja 3" />
+
+
+    </RadioGroup>
 
     <Button
-        android:id="@+id/slowko1"
-        android:layout_width="wrap_content"
+        android:id="@+id/guzik_potwierdzenia"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="1 slowko"
-        android:paddingLeft="80dp"
-        android:paddingRight="80dp"
-        android:layout_marginBottom="20dp"
-        android:textSize="16sp"
-        android:layout_above="@id/slowko2"
-        />
-
-    <Button
-        android:id="@+id/slowko2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:paddingLeft="80dp"
-        android:paddingRight="80dp"
-        android:text="2 slowko"
-        android:layout_marginBottom="20dp"
-        android:textSize="16sp"
-        android:layout_above="@id/slowko3"
-        />
-
-    <Button
-        android:id="@+id/slowko3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:paddingLeft="80dp"
-        android:paddingRight="80dp"
-        android:layout_marginBottom="20dp"
-        android:text="3 slowko"
-        android:textSize="16sp" />
-
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="16dp"
+        android:text="Potwierdź" />
 
 
 </RelativeLayout>
