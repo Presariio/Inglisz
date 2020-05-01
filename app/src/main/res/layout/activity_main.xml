@@ -1,46 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-
     <ImageView
-        android:id="@+id/imageview"
+        android:id="@+id/flaga1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_highscore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/nickname"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
-        android:contentDescription="@string/todo"
-        android:src="@drawable/angielski" />
-
-
-    <EditText
-        android:id="@+id/nickname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/zatwierdz"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="10dp"
-
-        android:autofillHints=""
-        android:hint="@string/prompt_nickname"
-        android:inputType="text" />
-
+        android:layout_above="@id/button_start_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Highscore: 0"
+        android:textSize="25sp" />
 
     <Button
-        android:id="@+id/zatwierdz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/button_start_quiz"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="20dp"
-        android:text="@string/zatwierd"
-        android:textSize="16sp" />
+        android:paddingHorizontal="30dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="18dp"
+        android:text="Rozpocznij Quiz" />
 
+    <Button
+        android:id="@+id/button_add_word"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_start_quiz"
+        android:paddingHorizontal="30dp"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"
+        android:text="Dodaj slowo"/>
 
 </RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AddWord">
+
+    <ImageView
+        android:id="@+id/flaga2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_add_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/flaga2"
+        android:textSize="18dp"
+        android:layout_marginBottom="30dp"
+        android:text="Aby dodać słowo, wpisz je po angielsku, a następnie poniżej jego znaczenie po polsku."/>
+
+    <EditText
+        android:id="@+id/editText_add_word_eng"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_add_word"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="@string/wpisz_slowko_eng"/>
+
+    <EditText
+        android:id="@+id/editText_add_word_pl"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/editText_add_word_eng"
+        android:layout_marginBottom="70dp"
+        android:hint="@string/wpisz_slowko_pl"/>
+
+    <Button
+        android:id="@+id/button_confirm_word"
+        android:layout_width="350dp"
+        android:textSize="20dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/editText_add_word_pl"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="Dodaj słowo"
+        />
+
+</RelativeLayout>

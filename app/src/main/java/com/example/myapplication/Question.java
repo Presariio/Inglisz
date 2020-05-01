@@ -1,13 +1,13 @@
 package com.example.myapplication;
 
 public class Question {
-        private String question;
-        private String option1;
-        private String option2;
-        private String option3;
-        private int answerNr;
+    private String question;
+    private String option1;
+    private String option2;
+    private String option3;
+    private int answerNr;
 
-    public Question(){}
+    public Question() {}
 
     public Question(String question, String option1, String option2, String option3, int answerNr) {
         this.question = question;

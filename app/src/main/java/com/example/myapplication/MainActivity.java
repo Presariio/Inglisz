@@ -6,36 +6,38 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
-private Button zatwierdz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //przycisk do menu
-        final Button przyciskZatwierdz = findViewById(R.id.zatwierdz);
-            przyciskZatwierdz.setOnClickListener(new View.OnClickListener(){
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(getApplicationContext(), "zatwierdzone", Toast.LENGTH_SHORT).show();
-                    openMenu();
-                }
-
+        Button buttonStartQuiz = findViewById(R.id.button_start_quiz);
+        buttonStartQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startQuiz();
             }
-            );
+        });
 
-        }
-        public void openMenu(){
-            Intent intentMenu = new Intent(this, menu.class);
-            startActivity(intentMenu);
-        }
+        Button buttonAddWord = findViewById(R.id.button_add_word);
+        buttonAddWord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addWord();
+            }
+        });
+    }
 
+    private void startQuiz() {
+        Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+        startActivity(intent);
+    }
+
+    private void addWord() {
+        Intent intent = new Intent(MainActivity.this, AddWord.class);
+        startActivity(intent);
+    }
 }
