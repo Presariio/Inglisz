@@ -47,12 +47,20 @@
         android:textSize="18dp"
         android:layout_marginBottom="10dp"
         android:text="Dodaj slowo"/>
-    
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_add_word"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
     <Spinner
         android:id="@+id/spinner_difficulty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button_add_word"
+        android:layout_below="@id/spinner_category"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
 

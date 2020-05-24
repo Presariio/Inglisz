@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
+
 public class Category {
     public static final int PROGRAMMING = 1;
     public static final int GEOGRAPHY = 2;
@@ -30,5 +32,11 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+
+    @Override
+    public String toString() {
+        return getName();
     }
 }
