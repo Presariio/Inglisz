@@ -13,7 +13,7 @@ import java.util.List;
 
 public class QuizDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "MyAwesomeQuiz.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 7;
 
     private static QuizDbHelper instance;
 
@@ -75,12 +75,14 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillCategoriesTable() {
-        Category c1 = new Category("Programming");
+        Category c1 = new Category("Kolory");
         insertCategory(c1);
-        Category c2 = new Category("Geography");
+        Category c2 = new Category("Zwierzęta");
         insertCategory(c2);
-        Category c3 = new Category("Math");
+        Category c3 = new Category("Jedzenie");
         insertCategory(c3);
+        Category c4 = new Category("Transport");
+        insertCategory(c4);
     }
 
     public void addCategory(Category category){
@@ -105,19 +107,19 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     private void fillQuestionsTable() {
         Question q1 = new Question("Programming.Easy: A is correct",
                 "A", "B", "C", 1,
-                Question.DIFFICULTY_EASY, Category.PROGRAMMING);
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q1);
         Question q2 = new Question("Geography.Medium: B is correct",
                 "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.GEOGRAPHY);
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q2);
         Question q3 = new Question("Math.Hard: C is correct",
                 "A", "B", "C", 3,
-                Question.DIFFICULTY_HARD, Category.MATH);
+                Question.DIFFICULTY_HARD, Category.JEDZENIE);
         insertQuestion(q3);
         Question q4 = new Question("Math.Easy: A is correct",
                 "A", "B", "C", 1,
-                Question.DIFFICULTY_EASY, Category.MATH);
+                Question.DIFFICULTY_EASY, Category.JEDZENIE);
         insertQuestion(q4);
         Question q5 = new Question("Non existing.Easy: A is correct",
                 "A", "B", "C", 1,
@@ -127,7 +129,10 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 "A", "B", "C", 2,
                 Question.DIFFICULTY_MEDIUM, 5);
         insertQuestion(q6);
-
+        Question q7 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
+        insertQuestion(q7);
     }
 
     public void addQuestion(Question question){

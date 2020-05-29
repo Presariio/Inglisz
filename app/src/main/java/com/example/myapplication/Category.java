@@ -3,9 +3,10 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 
 public class Category {
-    public static final int PROGRAMMING = 1;
-    public static final int GEOGRAPHY = 2;
-    public static final int MATH = 3;
+    public static final int KOLORY = 1;
+    public static final int ZWIERZETA = 2;
+    public static final int JEDZENIE = 3;
+    public static final int TRANSPORT = 4;
 
     private int id;
     private String name;
