@@ -13,7 +13,9 @@ import java.util.List;
 
 public class QuizDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "MyAwesomeQuiz.db";
-    private static final int DATABASE_VERSION = 5;
+    private static final int DATABASE_VERSION = 7;
+
+
 
     private static QuizDbHelper instance;
 
@@ -79,8 +81,22 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         insertCategory(c1);
         Category c2 = new Category("Zwierzęta");
         insertCategory(c2);
-        Category c3 = new Category("Jedzenie");
+        Category c3 = new Category("Warzywa");
         insertCategory(c3);
+        Category c4 = new Category("Transport");
+        insertCategory(c4);
+        Category c5 = new Category("Części ciała");
+        insertCategory(c5);
+        Category c6 = new Category("Sport");
+        insertCategory(c6);
+        Category c7 = new Category("Zawody");
+        insertCategory(c7);
+        Category c8 = new Category("Owoce");
+        insertCategory(c8);
+        Category c9 = new Category("Meble");
+        insertCategory(c9);
+        Category c10 = new Category("Ubrania");
+        insertCategory(c10);
     }
 
     public void addCategory(Category category){
@@ -103,30 +119,1007 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionsTable() {
-        Question q1 = new Question("Kolor CZARNY to:",
-                "Black", "Blue", "Orange", 1,
+
+        Question q1 = new Question("BLACK:",
+                "Czarny", "Niebieski", "Pomarańczowy", 1,
                 Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q1);
+
         Question q2 = new Question("Geography.Medium: B is correct",
                 "A", "B", "C", 2,
                 Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q2);
+
         Question q3 = new Question("Math.Hard: C is correct",
                 "A", "B", "C", 3,
                 Question.DIFFICULTY_HARD, Category.JEDZENIE);
         insertQuestion(q3);
+
         Question q4 = new Question("Math.Easy: A is correct",
                 "A", "B", "C", 1,
                 Question.DIFFICULTY_EASY, Category.JEDZENIE);
         insertQuestion(q4);
+
         Question q5 = new Question("Non existing.Easy: A is correct",
                 "A", "B", "C", 1,
-                Question.DIFFICULTY_EASY, 4);
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q5);
+
         Question q6 = new Question("Programming.Medium: B is correct",
                 "A", "B", "C", 2,
                 Question.DIFFICULTY_MEDIUM, 5);
         insertQuestion(q6);
+
+        Question q8 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q8);
+
+        Question q9 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q9);
+
+        Question q10 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q10);
+
+        Question q11 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q11);
+
+        Question q12 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q12);
+
+        Question q13 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q13);
+
+        Question q7 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q7);
+
+        Question q14 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q14);
+
+        Question q15 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q15);
+
+        Question q16 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q16);
+
+        Question q17 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q17);
+
+        Question q18 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q18);
+
+        Question q19 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q19);
+
+        Question q20 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q20);
+
+        Question q21 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q21);
+
+        Question q22 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q22);
+
+        Question q23 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q23);
+
+        Question q24 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q24);
+
+        Question q25 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q25);
+
+        Question q26 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q26);
+
+        Question q27 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q27);
+
+        Question q28 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q28);
+
+        Question q29 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q29);
+
+        Question q30 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q30);
+
+        Question q31 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q31);
+
+        Question q32 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q32);
+
+        Question q33 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q33);
+
+        Question q34 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q34);
+
+        Question q35 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q35);
+
+        Question q36 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q36);
+
+        Question q37 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q37);
+
+        Question q38 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q38);
+
+        Question q39 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q39);
+
+        Question q40 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q40);
+
+        Question q41 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q41);
+
+        Question q42 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q42);
+
+        Question q43 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q43);
+
+        Question q44 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q44);
+
+        Question q45 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q45);
+
+        Question q46 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q46);
+
+        Question q47 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q47);
+
+        Question q48 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q48);
+
+        Question q49 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q49);
+
+        Question q50 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q50);
+
+        Question q51 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q51);
+
+        Question q52 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q52);
+
+        Question q53 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q53);
+
+        Question q54 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q54);
+
+        Question q55 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q55);
+
+        Question q56 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q56);
+
+        Question q57 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q57);
+
+        Question q58 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q58);
+
+        Question q59 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q59);
+
+        Question q60 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q60);
+
+        Question q61 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q61);
+
+        Question q62 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q62);
+
+        Question q63 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q63);
+
+        Question q64 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q64);
+
+        Question q65 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q65);
+
+        Question q66 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q66);
+
+        Question q67 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q67);
+
+        Question q68 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q68);
+
+        Question q69 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q69);
+
+        Question q70 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q70);
+
+        Question q71 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q71);
+
+        Question q72 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q72);
+
+        Question q73 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q73);
+
+        Question q74 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q74);
+
+        Question q75 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q75);
+
+        Question q76 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q76);
+
+        Question q77 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q77);
+
+        Question q78 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q78);
+
+        Question q79 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q79);
+
+        Question q80 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q80);
+
+        Question q81 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q81);
+
+        Question q82 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q82);
+
+        Question q83 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q83);
+
+        Question q84 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q84);
+
+        Question q85 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q85);
+
+        Question q86 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q86);
+
+        Question q87 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q87);
+
+        Question q88 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q88);
+
+        Question q89 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q89);
+
+        Question q90 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q90);
+
+        Question q91 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q91);
+
+        Question q92 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q92);
+
+        Question q93 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q93);
+
+        Question q94 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q94);
+
+        Question q95 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q95);
+
+        Question q96 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q96);
+
+        Question q97 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q97);
+
+        Question q98 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q98);
+
+        Question q99 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q99);
+
+        Question q100 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q100);
+
+        Question q101 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q101);
+
+        Question q102 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q102);
+
+        Question q103 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q103);
+
+        Question q104 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q104);
+
+        Question q105 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q105);
+
+        Question q106 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q106);
+
+        Question q107 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q107);
+
+        Question q108 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q108);
+
+        Question q109 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q109);
+
+        Question q110 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q110);
+
+        Question q111 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q111);
+
+        Question q112 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q112);
+
+        Question q113 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q113);
+
+        Question q114 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q114);
+
+        Question q115 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q115);
+
+        Question q116 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q116);
+
+        Question q117 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q117);
+
+        Question q118 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q118);
+
+        Question q119 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q119);
+
+        Question q120 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q120);
+
+        Question q121 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q121);
+
+        Question q122 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q122);
+
+        Question q123 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q123);
+
+        Question q124 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q124);
+
+        Question q125 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q125);
+
+        Question q126 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q126);
+
+        Question q127 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q127);
+
+        Question q128 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q128);
+
+        Question q129 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q129);
+
+        Question q130 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q130);
+
+        Question q131 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q131);
+
+        Question q132 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q132);
+
+        Question q133 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q133);
+
+        Question q134 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q134);
+
+        Question q135 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q135);
+
+        Question q136 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q136);
+
+        Question q137 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q137);
+
+        Question q138 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q138);
+
+        Question q139 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q139);
+
+        Question q140 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q140);
+
+        Question q141 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q141);
+
+        Question q142 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q142);
+
+        Question q143 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q143);
+
+        Question q144 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q144);
+
+        Question q145 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q145);
+
+        Question q146 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q146);
+
+        Question q147 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q147);
+
+        Question q148 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q148);
+
+        Question q149 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q149);
+
+        Question q150 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q150);
+
+        Question q151 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q151);
+
+        Question q152 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q152);
+
+        Question q153 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q153);
+
+        Question q154 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q154);
+
+        Question q155 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q155);
+
+        Question q156 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q156);
+
+        Question q157 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q157);
+
+        Question q158 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q158);
+
+        Question q159 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q159);
+
+        Question q160 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q160);
+
+        Question q161 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q161);
+
+        Question q162 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q162);
+
+        Question q163 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q163);
+
+        Question q164 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q164);
+
+        Question q165 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q165);
+
+        Question q166 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q166);
+
+        Question q167 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q167);
+
+        Question q168 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q168);
+
+        Question q169 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q169);
+
+        Question q170 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q170);
+
+        Question q171 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q171);
+
+        Question q172 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q172);
+
+        Question q173 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q173);
+
+        Question q174 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q174);
+
+        Question q175 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q175);
+
+        Question q176 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q176);
+
+        Question q177 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q177);
+
+        Question q178 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q178);
+
+        Question q179 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q179);
+
+        Question q180 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q180);
+
+        Question q181 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q181);
+
+        Question q182 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q182);
+
+        Question q183 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q183);
+
+        Question q184 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q184);
+
+        Question q185 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q185);
+
+        Question q186 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q186);
+
+        Question q187 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q187);
+
+        Question q188 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q188);
+
+        Question q189 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q189);
+
+        Question q190 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q190);
+
+        Question q191 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q191);
+
+        Question q192 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q192);
+
+        Question q193 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q193);
+
+        Question q194 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q194);
+
+        Question q195 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q195);
+
+        Question q196 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q196);
+
+        Question q197 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q197);
+
+        Question q198 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q198);
+
+        Question q199 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q199);
+
+        Question q200 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q200);
+
 
     }
 

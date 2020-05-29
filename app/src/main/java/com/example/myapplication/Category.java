@@ -7,6 +7,13 @@ public class Category {
     public static final int ZWIERZETA = 2;
     public static final int JEDZENIE = 3;
     public static final int TRANSPORT = 4;
+    public static final int WARZYWA = 5;
+    public static final int CZESCI_CIALA = 6;
+    public static final int SPORT = 7;
+    public static final int ZAWODY = 8;
+    public static final int MEBLE = 9;
+    public static final int UBRANIA = 10;
+
 
     private int id;
     private String name;
