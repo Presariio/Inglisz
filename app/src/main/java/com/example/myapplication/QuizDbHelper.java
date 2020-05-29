@@ -13,7 +13,7 @@ import java.util.List;
 
 public class QuizDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "MyAwesomeQuiz.db";
-    private static final int DATABASE_VERSION = 7;
+    private static final int DATABASE_VERSION = 10;
 
 
 
@@ -81,17 +81,17 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         insertCategory(c1);
         Category c2 = new Category("Zwierzęta");
         insertCategory(c2);
-        Category c3 = new Category("Warzywa");
+        Category c3 = new Category("Owoce");
         insertCategory(c3);
         Category c4 = new Category("Transport");
         insertCategory(c4);
-        Category c5 = new Category("Części ciała");
+        Category c5 = new Category("Warzywa");
         insertCategory(c5);
-        Category c6 = new Category("Sport");
+        Category c6 = new Category("Części ciała");
         insertCategory(c6);
-        Category c7 = new Category("Zawody");
+        Category c7 = new Category("Sport");
         insertCategory(c7);
-        Category c8 = new Category("Owoce");
+        Category c8 = new Category("Zawody");
         insertCategory(c8);
         Category c9 = new Category("Meble");
         insertCategory(c9);
@@ -125,402 +125,402 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q1);
 
-        Question q2 = new Question("Geography.Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
+        Question q2 = new Question("GREY",
+                "Zielony", "Szary", "Złoty", 2,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q2);
 
-        Question q3 = new Question("Math.Hard: C is correct",
-                "A", "B", "C", 3,
-                Question.DIFFICULTY_HARD, Category.JEDZENIE);
+        Question q3 = new Question("GREEN",
+                "Brązowy", "Biały", "Zielony", 3,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q3);
 
-        Question q4 = new Question("Math.Easy: A is correct",
-                "A", "B", "C", 1,
-                Question.DIFFICULTY_EASY, Category.JEDZENIE);
+        Question q4 = new Question("SILVER",
+                "Srebrny", "Fioletowy", "Brązowy", 1,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q4);
 
-        Question q5 = new Question("Non existing.Easy: A is correct",
-                "A", "B", "C", 1,
-                Question.DIFFICULTY_EASY, Category.WARZYWA);
+        Question q5 = new Question("BROWN",
+                "Brązowy", "Złoty", "Biały", 1,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q5);
 
-        Question q6 = new Question("Programming.Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, 5);
+        Question q6 = new Question("ORANGE",
+                "Czarny", "Pomarańczowy", "Złoty", 2,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q6);
 
-        Question q8 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q8 = new Question("WHITE",
+                "Czarny", "Biały", "Żółty", 2,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q8);
 
-        Question q9 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q9 = new Question("YELLOW",
+                "Złoty", "Żółty", "Zielony", 2,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q9);
 
-        Question q10 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q10 = new Question("PINK",
+                "Różowy", "Biały", "Czarny", 1,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q10);
 
-        Question q11 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q11 = new Question("GOLDEN",
+                "Biały", "Czarny", "Złoty", 3,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q11);
 
-        Question q12 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q12 = new Question("BLUE",
+                "Niebieski", "Biały", "Czarny", 1,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q12);
 
-        Question q13 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q13 = new Question("RED",
+                "Fioletowy", "Brązowy", "Czerwony", 3,
+                Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q13);
 
-        Question q7 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q7 = new Question("STEEL",
+                "Stalowy", "Srebrny", "Onyksowy", 1,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q7);
 
-        Question q14 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q14 = new Question("ONYX",
+                "Antracytowy", "Onyksowy", "Popielaty", 2,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q14);
 
-        Question q15 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q15 = new Question("JET BLACK",
+                "Granatowy", "Czarny", "Kruczoczarny", 3,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q15);
 
-        Question q16 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q16 = new Question("ASURE",
+                "Lazurowy", "Turkusowy", "Szafirowy", 1,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q16);
 
-        Question q17 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q17 = new Question("SAPPHIRE",
+                "Błękitny", "Szafirowy", "Barwinkowy", 2,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q17);
 
-        Question q18 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q18 = new Question("MAROON",
+                "Fuksja", "Mahoniowy", "Bordowy", 3,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q18);
 
-        Question q19 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q19 = new Question("OCHRE",
+                "Ochra", "Indygo", "Bordowy", 1,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q19);
 
-        Question q20 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q20 = new Question("CYAN",
+                "Karminowy", "Niebieskozielony", "Antracytowy", 2,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q20);
 
-        Question q21 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q21 = new Question("AQUAMRINE",
+                "Szkarłatny", "Turkusowy", "Seledynowy", 3,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q21);
 
-        Question q22 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q22 = new Question("Scarlet",
+                "Szkarłatny", "Bursztynowy", "Antracytowy", 1,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q22);
 
-        Question q23 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q23 = new Question("GINGER",
+                "Karmazynowy", "Rudy", "Turkusowy", 2,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q23);
 
-        Question q24 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q24 = new Question("OLIVE GREEN",
+                "Rudy", "Granatowy", "Oliwkowy", 3,
+                Question.DIFFICULTY_MEDIUM, Category.KOLORY);
         insertQuestion(q24);
 
-        Question q25 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q25 = new Question("MAHOGANY",
+                "Mahoniowy", "B", "C", 1,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q25);
 
-        Question q26 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q26 = new Question("SANDY BROWN",
+                "Kasztanowy", "Piaskowy", "Płowożółty", 2,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q26);
 
-        Question q27 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q27 = new Question("CHAMPAGNE",
+                "Waniliowy", "Kremowy", "ALABASTER", 3,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q27);
 
-        Question q28 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q28 = new Question("ALABASTER",
+                "Alabastrowy", "Kość słoniowa", "Beżowy", 1,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q28);
 
-        Question q29 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q29 = new Question("HONEYDEW",
+                "Beżowy", "W kolorze spadzi", "Czarny", 2,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q29);
 
-        Question q30 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q30 = new Question("ASH",
+                "A", "B", "Popielaty", 3,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q30);
 
-        Question q31 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q31 = new Question("ANTHRACITE",
+                "Antracytowy", "Stalowy", "Srebrny", 1,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q31);
 
-        Question q32 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q32 = new Question("EMERALD",
+                "Oliwkowy", "Szmaragdowy zielony", "Jadeitowy", 2,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q32);
 
-        Question q33 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q33 = new Question("PALE PINK",
+                "Koralowy róż", "Jaskrawy róż", "Blady róż", 3,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q33);
 
-        Question q34 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q34 = new Question("TANGERINE",
+                "Mandarynkowy", "Morelowy", "Rudy", 1,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q34);
 
-        Question q35 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q35 = new Question("APRICOT",
+                "Dyniowy", "Morelowy", "Ceglasty", 2,
+                Question.DIFFICULTY_HARD, Category.KOLORY);
         insertQuestion(q35);
 
-        Question q36 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q36 = new Question("CARROT",
+                "Ogórek", "Marchewka", "Pietruszka", 2,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q36);
 
-        Question q37 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q37 = new Question("PARSLEY",
+                "Sałata", "Por", "Pietruszka", 3,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q37);
 
-        Question q38 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q38 = new Question("CUCUMBER",
+                "Ogórek", "Pomidor", "Ziemniak", 1,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q38);
 
-        Question q39 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q39 = new Question("LETTUCE",
+                "Marchewka", "Sałata", "Rzepa", 2,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q39);
 
-        Question q40 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q40 = new Question("CABBAGE",
+                "Seler", "Kapusta", "Cebula", 3,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q40);
 
-        Question q41 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q41 = new Question("TOMATO",
+                "Pomidor", "Ziemniak", "Fasola", 1,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q41);
 
-        Question q42 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q42 = new Question("POTATO",
+                "Pomidor", "Ziemniak", "Czosnek", 2,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q42);
 
-        Question q43 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q43 = new Question("BEET",
+                "Kukurydza", "Seler", "Burak", 3,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q43);
 
-        Question q44 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q44 = new Question("PUMPKIN",
+                "Dynia", "Grzyb", "Groch", 1,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q44);
 
-        Question q45 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q45 = new Question("LEEK",
+                "Rzepa", "Por", "Grzyb", 2,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q45);
 
-        Question q46 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q46 = new Question("PEA",
+                "Rzodkiewka", "Ogórek", "Groch", 3,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q46);
 
-        Question q47 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q47 = new Question("CORN",
+                "Kukurydza", "Kalafior", "Rzepa", 1,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q47);
 
-        Question q48 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q48 = new Question("GARLIC",
+                "Rzodkiewka", "Czosnek", "Pomidor", 2,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q48);
 
-        Question q49 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q49 = new Question("TURNIP",
+                "Grzyb", "Burak", "Rzepa", 3,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q49);
 
-        Question q50 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q50 = new Question("RADISH",
+                "Rzodkiewka", "Fasola", "Kukurydza", 1,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q50);
 
-        Question q51 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q51 = new Question("ASPARAGUS",
+                "Marchewka", "Szparagi", "Bakłażan", 2,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q51);
 
-        Question q52 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q52 = new Question("BRUSSELS SPROUT",
+                "Brokuł", "Burak", "Brukselka", 3,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q52);
 
-        Question q53 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q53 = new Question("CHIVES",
+                "Szczypiorek", "Czosnek", "Cukinia", 1,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q53);
 
-        Question q54 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q54 = new Question("CELERY",
+                "Brokuł", "Seler", "Sałata", 2,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q54);
 
-        Question q55 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q55 = new Question("OLIVES",
+                "Pietruszka", "Brokuł", "Oliwki", 3,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q55);
 
-        Question q56 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q56 = new Question("PEPPER",
+                "Papryka", "Bakłażan", "Czosnek", 1,
+                Question.DIFFICULTY_EASY, Category.WARZYWA);
         insertQuestion(q56);
 
-        Question q57 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q57 = new Question("SOYA / SOY",
+                "Bób", "Soja", "Cebula dymka", 2,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q57);
 
-        Question q58 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q58 = new Question("BROAD BEAN",
+                "Fasolka", "Soja", "Bób", 3,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q58);
 
-        Question q59 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q59 = new Question("ARTICHOKE",
+                "Karczoch", "Brukselka", "Cebula", 1,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q59);
 
-        Question q60 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q60 = new Question("CHICORY",
+                "A", "Cykoria", "C", 2,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q60);
 
-        Question q61 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q61 = new Question("CRESS",
+                "Szczypiorek", "Bób", "Rzeżucha", 3,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q61);
 
-        Question q62 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q62 = new Question("DILL",
+                "Koper Ogrodowy", "Fenkuł", "Chrzan", 1,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q62);
 
-        Question q63 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q63 = new Question("FENNEL",
+                "Koper ogrodowy", "Fenkuł", "Chrzan", 2,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q63);
 
-        Question q64 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q64 = new Question("HORSERADISH",
+                "Rzeżucha", "Bób", "Chrzan", 3,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q64);
 
-        Question q65 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q65 = new Question("KALE",
+                "Jarmuż", "Soczewica", "Czosnek", 1,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q65);
 
-        Question q66 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q66 = new Question("LENTIL",
+                "Rabarbar", "Soczewica", "Brukiew", 2,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q66);
 
-        Question q67 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q67 = new Question("MARROW",
+                "Pasternak", "Marchewka", "Kabaczek", 3,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q67);
 
-        Question q68 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q68 = new Question("RHUBARB",
+                "Rabarbar", "Brukiew", "Cytryna", 1,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q68);
 
-        Question q69 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q69 = new Question("PARNIP",
+                "Rzepa", "Paternak", "Cebula", 2,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q69);
 
-        Question q70 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q70 = new Question("TURNIP",
+                "Brukiew", "Batat", "Rzepa", 3,
+                Question.DIFFICULTY_HARD, Category.WARZYWA);
         insertQuestion(q70);
 
-        Question q71 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q71 = new Question("SWEET POTATO",
+                "Batat", "Rzepa", "Rabarbar", 1,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q71);
 
-        Question q72 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q72 = new Question("APPLE",
+                "Pomarańcza", "Jabłko", "Gruszka", 2,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
         insertQuestion(q72);
 
-        Question q73 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q73 = new Question("Cherry",
+                "Arbuz", "Kokos", "Wiśnia", 3,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
         insertQuestion(q73);
 
-        Question q74 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q74 = new Question("PEAR",
+                "Gruszka", "Ananas", "Winogrona", 1,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
         insertQuestion(q74);
 
-        Question q75 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q75 = new Question("PINEAPPLE",
+                "Arbuz", "Ananas", "Śliwka", 2,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
         insertQuestion(q75);
 
-        Question q76 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q76 = new Question("STRAWBERRY",
+                "Wiśnia", "Brzoskwinia", "Truskawka", 3,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
         insertQuestion(q76);
 
-        Question q77 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q77 = new Question("GRAPES",
+                "Winogrona", "Truskawka", "Cytryna", 1,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q77);
 
-        Question q78 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q78 = new Question("ORANGE",
+                "Jagoda", "Pomarańcza", "Poziomka", 2,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
         insertQuestion(q78);
 
-        Question q79 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q79 = new Question("COCONUT",
+                "Gruszka", "Arbuz", "Kokos", 3,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
         insertQuestion(q79);
 
-        Question q80 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q80 = new Question("WATERMELON",
+                "Arbuz", "Śliwka", "Porzeczka", 1,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
         insertQuestion(q80);
 
-        Question q81 = new Question(".Medium: B is correct",
+        Question q81 = new Question("",
                 "A", "B", "C", 2,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q81);

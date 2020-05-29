@@ -5,7 +5,7 @@ import androidx.annotation.NonNull;
 public class Category {
     public static final int KOLORY = 1;
     public static final int ZWIERZETA = 2;
-    public static final int JEDZENIE = 3;
+    public static final int OWOCE = 3;
     public static final int TRANSPORT = 4;
     public static final int WARZYWA = 5;
     public static final int CZESCI_CIALA = 6;
