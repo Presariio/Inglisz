@@ -13,7 +13,7 @@ import java.util.List;
 
 public class QuizDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "MyAwesomeQuiz.db";
-    private static final int DATABASE_VERSION = 7;
+    private static final int DATABASE_VERSION = 5;
 
     private static QuizDbHelper instance;
 
@@ -81,8 +81,6 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         insertCategory(c2);
         Category c3 = new Category("Jedzenie");
         insertCategory(c3);
-        Category c4 = new Category("Transport");
-        insertCategory(c4);
     }
 
     public void addCategory(Category category){
@@ -105,8 +103,8 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionsTable() {
-        Question q1 = new Question("Programming.Easy: A is correct",
-                "A", "B", "C", 1,
+        Question q1 = new Question("Kolor CZARNY to:",
+                "Black", "Blue", "Orange", 1,
                 Question.DIFFICULTY_EASY, Category.KOLORY);
         insertQuestion(q1);
         Question q2 = new Question("Geography.Medium: B is correct",
@@ -129,10 +127,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 "A", "B", "C", 2,
                 Question.DIFFICULTY_MEDIUM, 5);
         insertQuestion(q6);
-        Question q7 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
-        insertQuestion(q7);
+
     }
 
     public void addQuestion(Question question){
