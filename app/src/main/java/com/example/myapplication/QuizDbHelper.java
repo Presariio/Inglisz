@@ -13,7 +13,7 @@ import java.util.List;
 
 public class QuizDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "MyAwesomeQuiz.db";
-    private static final int DATABASE_VERSION = 10;
+    private static final int DATABASE_VERSION = 13;
 
 
 
@@ -502,7 +502,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
 
         Question q77 = new Question("GRAPES",
                 "Winogrona", "Truskawka", "Cytryna", 1,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
         insertQuestion(q77);
 
         Question q78 = new Question("ORANGE",
@@ -520,607 +520,640 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 Question.DIFFICULTY_EASY, Category.OWOCE);
         insertQuestion(q80);
 
-        Question q81 = new Question("",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q81 = new Question("ZEBRA",
+                "Klacz", "Źrebak", "Zebra", 3,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q81);
 
-        Question q82 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q82 = new Question("CROCODILE",
+                "Krokodyl", "Aligator", "Dinozaur", 1,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q82);
 
-        Question q83 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
+        Question q83 = new Question("GOAT",
+                "Koza", "Baran", "Kozioł", 1,
                 Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
         insertQuestion(q83);
 
-        Question q84 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q84 = new Question("BUG",
+                "Koń", "Robak", "Biedronka", 2,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q84);
 
-        Question q85 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q85 = new Question("GIRAFFE",
+                "Antylopa", "Gazela", "Żyrafa", 3,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q85);
 
-        Question q86 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q86 = new Question("DOG",
+                "Pies", "Robak", "Kot", 1,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q86);
 
-        Question q87 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q87 = new Question("HORSE",
+                "Koza", "Koń", "Źrebak", 2,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q87);
 
-        Question q88 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q88 = new Question("ELEPHANT",
+                "Mamut", "Tapir", "Słoń", 3,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q88);
 
-        Question q89 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q89 = new Question("SNAKE",
+                "Wąż", "Żmija", "Jaszczurka", 1,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q89);
 
-        Question q90 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q90 = new Question("CAT",
+                "Koń", "Kot", "Pies", 2,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q90);
 
-        Question q91 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q91 = new Question("SHARK",
+                "Wieloryb", "Orka", "Rekin", 3,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q91);
 
-        Question q92 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q92 = new Question("BIRD",
+                "Ptak", "Ssak", "Gad", 1,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q92);
 
-        Question q93 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q93 = new Question("FROG",
+                "Ropucha", "Żaba", "Żmija", 2,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q93);
 
-        Question q94 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q94 = new Question("BEAR",
+                "Koza", "Koala", "Niedźwiedź", 3,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q94);
 
-        Question q95 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q95 = new Question("BUFFALO",
+                "Bawół", "Byk", "Żubr", 1,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q95);
 
-        Question q96 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q96 = new Question("BUTTERFLY",
+                "Ważka", "Motyl", "Latające masło", 2,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q96);
 
-        Question q97 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q97 = new Question("CAMEL",
+                "Owca", "Kozioł", "Wielbłąd", 3,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q97);
 
-        Question q98 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q98 = new Question("CHEETAH",
+                "Gepard", "Pantera", "Jaguar", 1,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q98);
 
-        Question q99 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q99 = new Question("COW",
+                "Świnia", "Krowa", "Byk", 2,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q99);
 
-        Question q100 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q100 = new Question("DOLPHIN",
+                "Orka", "Dromader", "Delfin", 3,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q100);
 
-        Question q101 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q101 = new Question("DUCK",
+                "Kaczka", "Gęś", "Kura", 1,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q101);
 
-        Question q102 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q102 = new Question("FISH",
+                "Meduza", "Ryba", "Rekin", 2,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q102);
 
-        Question q103 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q103 = new Question("FOX",
+                "Kojot", "Wilk", "Lis", 3,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q103);
 
-        Question q104 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q104 = new Question("GORILLA",
+                "Goryl", "Szympans", "Orangutan", 1,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q104);
 
-        Question q105 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q105 = new Question("HEN",
+                "Kogut", "Kura", "Kaczka", 2,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q105);
 
-        Question q106 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q106 = new Question("HIPPO",
+                "Prosię", "Słoń morski", "Hipopotam", 3,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q106);
 
-        Question q107 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q107 = new Question("IGUANA",
+                "Iguana", "Waran", "Jaszczurka", 1,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q107);
 
-        Question q108 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q108 = new Question("KOALA",
+                "Dziobak", "Koala", "Kangur", 2,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q108);
 
-        Question q109 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q109 = new Question("LION",
+                "Pantera", "Tygrys", "Lew", 3,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q109);
 
-        Question q110 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q110 = new Question("LIZARD",
+                "Jaszczurka", "Iguana", "Smok", 1,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q110);
 
-        Question q111 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q111 = new Question("MONKEY",
+                "Lemur", "Małpa", "Goryl", 2,
+                Question.DIFFICULTY_EASY, Category.ZWIERZETA);
         insertQuestion(q111);
 
-        Question q112 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q112 = new Question("MARMOT",
+                "Bóbr", "Surykatka", "Świstak", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q112);
 
-        Question q113 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q113 = new Question("BABOON",
+                "Pawian", "Szympans", "Lemur", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q113);
 
-        Question q114 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q114 = new Question("FLEA",
+                "Mucha", "Pchła", "Kleszcz", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q114);
 
-        Question q115 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q115 = new Question("MOOSE",
+                "Sarna", "Jeleń", "Łoś", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q115);
 
-        Question q116 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q116 = new Question("WHALE",
+                "Wieloryb", "Delfin", "Krowa morska", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q116);
 
-        Question q117 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q117 = new Question("HAMSTER",
+                "Świnka morska", "Chomik", "Mysz", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q117);
 
-        Question q118 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q118 = new Question("HOG",
+                "Świnia", "Dzik", "Wieprz", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q118);
 
-        Question q119 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q119 = new Question("PENGUIN",
+                "Pingwin", "Dziobak", "Kaczka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q119);
 
-        Question q120 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q120 = new Question("VIPER",
+                "Jaszczurka", "Żmija", "Wąż", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q120);
 
-        Question q121 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q121 = new Question("TURTLE",
+                "Żmija", "Krokodyl", "Żółw", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q121);
 
-        Question q122 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q122 = new Question("BISON",
+                "Bizon", "Bawół", "Żubr", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q122);
 
-        Question q123 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q123 = new Question("BEETLE",
+                "Gąsienica", "Żuk", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q123);
 
-        Question q124 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q124 = new Question("CRANE",
+                "Kruk", "Paw", "Żuraw", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q124);
 
-        Question q125 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q125 = new Question("GRUB",
+                "Pędrak", "Larwa", "Dżdżownica", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q125);
 
-        Question q126 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q126 = new Question("BEAVER",
+                "Wiewiórka", "Bóbr", "Borsuk", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q126);
 
-        Question q127 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q127 = new Question("BULL",
+                "Bizon", "Bawół", "Byk", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q127);
 
-        Question q128 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q128 = new Question("EAGLE",
+                "Orzeł", "Sęp", "Żuraw", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q128);
 
-        Question q129 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q129 = new Question("SALMON",
+                "Sum", "Łosoś", "Szczupak", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q129);
 
-        Question q130 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q130 = new Question("MOLE",
+                "Borsuk", "Szczur", "Kret", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q130);
 
-        Question q131 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q131 = new Question("ALLIGATOR",
+                "Aligator", "Krokodyl", "Dinozaur", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q131);
 
-        Question q132 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q132 = new Question(".BADGER",
+                "Łasica", "Borsuk", "Fretka", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZWIERZETA);
         insertQuestion(q132);
 
-        Question q133 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q133 = new Question("TOAD",
+                "Kijanka", "Żaba", "Ropucha", 3,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q133);
 
-        Question q134 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q134 = new Question("MANATEE",
+                "Krowa morska", "Foka", "Wieloryb", 1,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q134);
 
-        Question q135 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q135 = new Question("POLAR BEAR",
+                "Miś koala", "Niedźwiedź polarny", "Niedźwiedź Grizzly", 2,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q135);
 
-        Question q136 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q136 = new Question("DRAGONFLY",
+                "Smok", "Motyl", "Ważka", 3,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q136);
 
-        Question q137 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q137 = new Question("EARTHWORM",
+                "Dżdżownica", "Pędrak", "Stonoga", 1,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q137);
 
-        Question q138 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q138 = new Question("OCTOPUS",
+                "Meduza", "Ośmiornica", "Kałamarnica", 2,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q138);
 
-        Question q139 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q139 = new Question("HARE",
+                "Chomik", "Królik", "Zając", 3,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q139);
 
-        Question q140 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q140 = new Question("WILDCAT",
+                "Żbik", "Ryś", "Tygrys", 1,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q140);
 
-        Question q141 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q141 = new Question("LYNX",
+                "Jaguar", "Ryś", "Pantera", 2,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q141);
 
-        Question q142 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q142 = new Question("SQUIRREL",
+                "Szynszyl", "Królik", "Wiewiórka", 3,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q142);
 
-        Question q143 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q143 = new Question("JACKAL",
+                "Szakal", "Wilk", "Owczarek", 1,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q143);
 
-        Question q144 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q144 = new Question("TREEFROG",
+                "Żaba", "Rzekotka drzewna", "Ropucha", 2,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q144);
 
-        Question q145 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q145 = new Question("SQUID",
+                "Meduza", "Ślimak", "Kałamarnica", 3,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q145);
 
-        Question q146 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q146 = new Question("BADGER",
+                "Borsuk", "Wydra", "Łasica", 1,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q146);
 
-        Question q147 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q147 = new Question("WEASEL",
+                "Skunks", "Łasica", "Opos", 2,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q147);
 
-        Question q148 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q148 = new Question("OTTER",
+                "Świnka morska", "Fretka", "Wydra", 3,
+                Question.DIFFICULTY_HARD, Category.ZWIERZETA);
         insertQuestion(q148);
 
-        Question q149 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q149 = new Question("PLANE",
+                "Samolot", "Samochód", "Łódź", 1,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q149);
 
-        Question q150 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q150 = new Question("BIKE",
+                "Wrotki", "Rower", "Deskorolka", 2,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q150);
 
-        Question q151 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q151 = new Question("BOAT",
+                "Samolot", "Żaglówka", "Łódź", 3,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q151);
 
-        Question q152 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q152 = new Question("BUS",
+                "Autobus", "Samochód", "Samochód dostawczy", 1,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q152);
 
-        Question q153 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q153 = new Question("CAR",
+                "Wrotki", "Samochód", "Autobus", 2,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q153);
 
-        Question q154 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q154 = new Question("TRUCK",
+                "Autobus", "Samochód dostawczy", "Ciężarówka", 3,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q154);
 
-        Question q155 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q155 = new Question("MOTORCYCLE",
+                "Motocykl", "Rower", "Hulajnoga", 1,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q155);
 
-        Question q156 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q156 = new Question("TAXI",
+                "Samochód", "Taksówka", "Ciężarówka", 2,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q156);
 
-        Question q157 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q157 = new Question("TRAIN",
+                "Autobus", "Metro", "Pociąg", 3,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q157);
 
-        Question q158 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q158 = new Question("SUBWAY",
+                "Metro", "Skuter", "Pociąg", 1,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q158);
 
-        Question q159 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q159 = new Question("SCOOTER",
+                "Wrotki", "Skuter", "Motocykl", 2,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q159);
 
-        Question q160 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q160 = new Question("YACHT",
+                "Rower wodny", "Statek", "Żaglówka", 3,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q160);
 
-        Question q161 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q161 = new Question("TRAM",
+                "Tramwaj", "Lokomotywa", "Pociąg", 1,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q161);
 
-        Question q162 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q162 = new Question("FAST TRAIN",
+                "Ciężarówka", "Pociąg pospieszny", "Tramwaj", 2,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q162);
 
-        Question q163 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q163 = new Question("PASSENGER TRAIN",
+                "Metro", "Pociąg pospieszny", "Pociąg osobowy", 3,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q163);
 
-        Question q164 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q164 = new Question("PICK-UP",
+                "Furgonetka", "Ciężarówka", "Samochód dostawczy", 1,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q164);
 
-        Question q165 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q165 = new Question("DELIVERY VAN",
+                "Samochód ciężarowy", "Samochód dostawczy", "Samochód osobowy", 2,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q165);
 
-        Question q166 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q166 = new Question("MOTORBOAT",
+                "Łódź", "Skuter wodny", "Motorówka", 3,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q166);
 
-        Question q167 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q167 = new Question("SUBMARINE",
+                "Łódź podwodna", "Łódź", "Motorówka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q167);
 
-        Question q168 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q168 = new Question("SHIP",
+                "Motorówka", "Statek", "Łódź podwodna", 2,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q168);
 
-        Question q169 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q169 = new Question("JET PLANE",
+                "Samolot", "Statek kosmiczny", "Odrzutowiec", 3,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q169);
 
-        Question q170 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q170 = new Question("VEHICLE",
+                "Pojazd", "Statek", "Samochód", 1,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q170);
 
-        Question q171 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q171 = new Question("SPACESHIP",
+                "Łódź podwodna", "Statek kosmiczny", "Statek", 2,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q171);
 
-        Question q172 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q172 = new Question("AMBULANCE",
+                "Taksówka", "Samochód policyjny", "Karetka pogotowia", 3,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q172);
 
-        Question q173 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q173 = new Question("LIFEBOAT",
+                "Łódź ratunkowa", "Łódź podwodna", "Statek kosmiczny", 1,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q173);
 
-        Question q174 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q174 = new Question("POLICE CAR",
+                "Samochód dostawczy", "Radiowóz policyjny", "Samochód ciężarowy", 2,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q174);
 
-        Question q175 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q175 = new Question("LOCOMOTIVE",
+                "Pociąg", "Środek transportu", "Lokomotywa", 3,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q175);
 
-        Question q176 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q176 = new Question("TRAILER",
+                "Przyczepa", "Ciężarówka", "Samochód dostawczy", 1,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q176);
 
-        Question q177 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q177 = new Question("ELECTRIC CAR",
+                "Samochód spalinowy", "Samochód elektryczny", "Tramwaj", 2,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q177);
 
-        Question q178 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q178 = new Question("COMBUSTION VEHICLE",
+                "Samochód elektryczny", "Lokomotywa", "Pojazd spalinowy", 3,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q178);
 
-        Question q179 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q179 = new Question("TANK",
+                "Tankowiec", "Czołg", "Cysterna", 1,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q179);
 
-        Question q180 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q180 = new Question("TANK TRUCK",
+                "Czołg", "Cysterna", "Ciężarówka", 2,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q180);
 
-        Question q181 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q181 = new Question("AIRSHIP",
+                "Odrzutowiec", "Samolot", "Sterowiec", 3,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q181);
 
-        Question q182 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q182 = new Question("ROCKET",
+                "Rakieta", "Wahadłowiec kosmiczny", "Statek kosmiczny", 1,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q182);
 
-        Question q183 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q183 = new Question("TRACTOR",
+                "Ciężarówka", "Traktor", "Pociąg", 2,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q183);
 
-        Question q184 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q184 = new Question("COMBINE-HARVESTER",
+                "Statek kosmiczny", "Traktor", "Kombajn", 3,
+                Question.DIFFICULTY_MEDIUM, Category.TRANSPORT);
         insertQuestion(q184);
 
-        Question q185 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q185 = new Question("MERCHANT VESSEL",
+                "Statek handlowy", "Statek pasażerski", "Lotniskowiec", 1,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q185);
 
-        Question q186 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q186 = new Question("CARGO SHIP",
+                "Statek handlowy", "Statek towarowy", "Łódź", 2,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q186);
 
-        Question q187 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q187 = new Question("CONTAINER VESSEL",
+                "Statek handlowy", "Lotniskowiec", "Kontenerowiec", 3,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q187);
 
-        Question q188 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q188 = new Question("OIL TANKER",
+                "Tankowiec", "Statek pasażerski", "Kontenerowiec", 1,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q188);
 
-        Question q189 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q189 = new Question("BARGE",
+                "Łódź", "Barka", "Statek handlowy", 2,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q189);
 
-        Question q190 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q190 = new Question("PASSENGER SHIP",
+                "Barka", "Statek towarowy", "Statek pasażerski", 3,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q190);
 
-        Question q191 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q191 = new Question("ICEBRAKER",
+                "Lodołamacz", "Barka", "Prom", 1,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q191);
 
-        Question q192 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q192 = new Question("CRUISE SHIP",
+                "Lotniskowiec", "Statek wycieczkowy", "Statek pasażerski", 2,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q192);
 
-        Question q193 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q193 = new Question("FERRYBOAT",
+                "Lodołamacz", "Statek pasażerski", "Prom", 3,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q193);
 
-        Question q194 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q194 = new Question("BIPLANE",
+                "Dwupłatowiec", "Odrzutowiec", "Szybowiec", 1,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q194);
 
-        Question q195 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q195 = new Question("GLIDER",
+                "Dwupłatowiec", "Szybowiec", "Samolot transportowy", 2,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q195);
 
-        Question q196 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q196 = new Question("HELICOPTER",
+                "Sterowiec", "Odrzutowiec", "HELICOPTER", 3,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q196);
 
-        Question q197 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q197 = new Question("CABRIOLET",
+                "Kabriolet", "Miniwan", "Pick-up", 1,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q197);
 
-        Question q198 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q198 = new Question("LIMOUSINE",
+                "Miniwan", "Limuzyna", "Kabriolet", 2,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q198);
 
-        Question q199 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q199 = new Question("RACE CAR",
+                "Limuzyna", "Łódź wyścigowa", "Samochód wyścigowy", 3,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q199);
 
-        Question q200 = new Question(".Medium: B is correct",
-                "A", "B", "C", 2,
-                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        Question q200 = new Question("JET SKI",
+                "Skuter wodny", "Samolot odrzutowy", "C", 1,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
         insertQuestion(q200);
 
+        Question q201 = new Question("SNOWCAT",
+                "Skuter śnieżny", "Ratrak", "Lodołamacz", 2,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
+        insertQuestion(q201);
 
+        Question q202 = new Question("GARBAGE TRUCK",
+                "Wóz strażacki", "Ciężarówka", "Śmieciarka", 3,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
+        insertQuestion(q202);
+
+        Question q203 = new Question("FORKLIFT",
+                "Wózek widłowy", "Spychacz", "Ratrak", 1,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
+        insertQuestion(q203);
+
+        Question q204 = new Question("FIRE TRUCK",
+                "Odśnieżarka", "Wóz strażacki", "Śmieciarka", 2,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
+        insertQuestion(q204);
+
+        Question q205 = new Question("SNOWBLOWER",
+                "Skuter wodny", "Ratrak", "Odśnieżarka", 3,
+                Question.DIFFICULTY_HARD, Category.TRANSPORT);
+        insertQuestion(q205);
+
+        Question q206 = new Question("SKATEBOARD",
+                "Deskorolka", "Przyczepa", "Rolki", 1,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
+        insertQuestion(q206);
+
+        Question q207 = new Question("ROLLERS",
+                "Rower", "Rolki", "Hulajnoga", 2,
+                Question.DIFFICULTY_EASY, Category.TRANSPORT);
+        insertQuestion(q207);
     }
 
     public void addQuestion(Question question){
