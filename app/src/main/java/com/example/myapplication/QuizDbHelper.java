@@ -13,7 +13,7 @@ import java.util.List;
 
 public class QuizDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "MyAwesomeQuiz.db";
-    private static final int DATABASE_VERSION = 13;
+    private static final int DATABASE_VERSION = 14;
 
 
 
@@ -1154,6 +1154,346 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 "Rower", "Rolki", "Hulajnoga", 2,
                 Question.DIFFICULTY_EASY, Category.TRANSPORT);
         insertQuestion(q207);
+
+        Question q208 = new Question("FRECKLES",
+                "Policzki", "Brew", "Piegi", 3,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q208);
+
+        Question q209 = new Question("EYE",
+                "Oko", "Ucho", "Nos", 1,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q209);
+
+        Question q210 = new Question("FACE",
+                "Ręka", "Twarz", "Głowa", 2,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q210);
+
+        Question q211 = new Question("NOSE",
+                "Ramię", "Palec", "Nos", 3,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q211);
+
+        Question q212 = new Question("TEETH",
+                "Zęby", "Włosy", "Paznokcie", 1,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q212);
+
+        Question q213 = new Question("ARM",
+                "Dłoń", "Ramię", "Łokieć", 2,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q213);
+
+        Question q214 = new Question("BELLY",
+                "Noga", "Klatka piersiowa", "Brzuch", 3,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q214);
+
+        Question q215 = new Question("LEG",
+                "Noga", "Ręka", "Tułów", 1,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q215);
+
+        Question q216 = new Question("FOOT",
+                "Noga", "Stopa", "Ręka", 2,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q216);
+
+        Question q217 = new Question("HAND",
+                "Stopa", "Palec", "Dłoń", 3,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q217);
+
+        Question q218 = new Question("MOUTH",
+                "Usta", "Nos", "Twarz", 1,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q218);
+
+        Question q219 = new Question("EAR",
+                "Oko", "Ucho", "Usta", 2,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q219);
+
+        Question q220 = new Question("FINGER",
+                "Ramię", "Dłoń", "Palec", 3,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q220);
+
+        Question q221 = new Question("BOTTOM",
+                "Pośladki", "Plecy", "Brzuch", 1,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q221);
+
+        Question q222 = new Question("NECK",
+                "Tułów", "Szyja", "Plecy", 2,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q222);
+
+        Question q223 = new Question("TONGUE",
+                "Twarz", "Usta", "Język", 3,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q223);
+
+        Question q224 = new Question("HEAD",
+                "Czoło", "Głowa", "Twarz", 1,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q224);
+
+        Question q225 = new Question("BACK",
+                "Brzuch", "Plecy", "Pośladka", 2,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q225);
+
+        Question q226 = new Question("SHOULDER",
+                "Nogi", "Ramię", "Nadgarstek", 3,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q226);
+
+        Question q227 = new Question("CHEST",
+                "Brzuch", "Klatka piersiowa", "Czoło", 1,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q227);
+
+        Question q228 = new Question("CHEEK",
+                "Broda", "Policzek", "Czoło", 2,
+                Question.DIFFICULTY_EASY, Category.CZESCI_CIALA);
+        insertQuestion(q228);
+
+        Question q229 = new Question("WRIST",
+                "Łokieć", "Ręka", "Nadgarstek", 3,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q229);
+
+        Question q230 = new Question("ELBOW",
+                "Łokieć", "Pięta", "Kolano", 1,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q230);
+
+        Question q231 = new Question("HEEL",
+                "Palec", "Pięta", "Noga", 2,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q231);
+
+        Question q232 = new Question("TOE",
+                "stopa", "Palec u ręki", "Palec u nogi", 3,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q232);
+
+        Question q233 = new Question("FOREARM",
+                "Przedramię", "Ramię", "Ręka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q233);
+
+        Question q234 = new Question("BONE",
+                "Klatka piersiowa", "Kość", "Płuca", 2,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q234);
+
+        Question q235 = new Question("NAIL",
+                "Noaskórek", "Kręgosłup", "Paznokieć", 3,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q235);
+
+        Question q236 = new Question("SPINE",
+                "Kręgosłup", "Żebra", "Płuca", 1,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q236);
+
+        Question q237 = new Question("PALM",
+                "Ręka", "Dłoń", "Palec", 2,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q237);
+
+        Question q238 = new Question("KIDNEY",
+                "Żołądek", "Serce", "Nerka", 3,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q238);
+
+        Question q239 = new Question("LIVER",
+                "Wątroba", "Jelita", "Żołądek", 1,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q239);
+
+        Question q240 = new Question("STOMACH",
+                "Płuca", "Żołądek", "Gardło", 2,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q240);
+
+        Question q241 = new Question("Heart",
+                "Pęcherz", "Nerka", "Serce", 3,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q241);
+
+        Question q242 = new Question("HIP",
+                "Biodro", "Noga", "Brzuch", 1,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q242);
+
+        Question q243 = new Question("CALF",
+                "Pięta", "Łydka", "Palec", 2,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q243);
+
+        Question q244 = new Question("FOREHEAD",
+                "Twarz", "Głowa", "Czoło", 3,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q244);
+
+        Question q245 = new Question("NOSTRIL",
+                "Nozdrze", "Nos", "Policzek", 1,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q245);
+
+        Question q246 = new Question("VEIN",
+                "Obojczyk", "Żyła", "Płuco", 2,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q246);
+
+        Question q247 = new Question("JAW",
+                "Ząb", "Twarz", "Szczęka", 3,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q247);
+
+        Question q248 = new Question("FIST",
+                "Pięść", "Dłoń", "Ręka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q248);
+
+        Question q249 = new Question("WRINKLES",
+                "Czoło", "Zmarszczki", "Piegi", 2,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q249);
+
+        Question q250 = new Question("BIRTHMARK",
+                "Piegi", "Zmarszczki", "Znamię", 3,
+                Question.DIFFICULTY_MEDIUM, Category.CZESCI_CIALA);
+        insertQuestion(q250);
+
+        Question q251 = new Question("THUMB",
+                "Kciuk", "Palec", "Dłoń", 1,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q251);
+
+        Question q252 = new Question("INTESTINES",
+                "Żołądek", "Jelita", "Nerka", 2,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q252);
+
+        Question q253 = new Question("BLADDER",
+                "Wyrostek", "Jelita", "Pęcherz", 3,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q253);
+
+        Question q254 = new Question("APPENDIX",
+                "Wyrostek", "Jelita", "Płuca", 1,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q254);
+
+        Question q255 = new Question("SPLEEN",
+                "Gardło", "Śledziona", "Nerka", 2,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q255);
+
+        Question q256 = new Question("ARTERY",
+                "Aorta", "Żebro", "Tętnica", 3,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q256);
+
+        Question q257 = new Question("BRONCHUS",
+                "Oskrzela", "Przełyk", "Dwunastnica", 1,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q257);
+
+        Question q258 = new Question("CORONARY VESSELS",
+                "Naczynia krwionośne", "Naczynia wieńcowe", "Pęcherzyk żółciowy", 2,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q258);
+
+        Question q259 = new Question("DUODENUM",
+                "Żołądek", "Trzynastnica", "Dwunastnica", 3,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q259);
+
+        Question q260 = new Question("PALATE",
+                "Podniebienie", "Gardło", "Przepona", 1,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q260);
+
+        Question q261 = new Question("LARYNX",
+                "Przełyk", "Krtań", "Dwunastnica", 2,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q261);
+
+        Question q262 = new Question("PULSE",
+                "Ciśnienie", "Biodro", "Tętno", 3,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q262);
+
+        Question q263 = new Question("PANCREAS",
+                "Trzustka", "Jelita", "Pęcherz", 1,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q263);
+
+        Question q264 = new Question("SPINAL CORD",
+                "Kręgosłup", "Rdzeń kręgowy", "Żebro", 2,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q264);
+
+        Question q265 = new Question("TENDON",
+                "Kręgosłup", "Tarczyca", "Ścięgno", 3,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q265);
+
+        Question q266 = new Question("TRACHEA",
+                "Tchawica", "Prostata", "Trzustka", 1,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q266);
+
+        Question q267 = new Question("ADIPOSE TISSUE",
+                "Tkanka mięśniowa", "Tkanka tłuszczowa", "Tkanka kostna", 2,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q267);
+
+        Question q268 = new Question("ESOPHAGUS",
+                "Migdałek", "Gardło", "Przełyk", 3,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q268);
+
+        Question q269 = new Question("SALIVARY GLANDS",
+                "Gruczoły ślinowe", "Gruczoły potowe", "Gruczoły łojowe", 1,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q269);
+
+        Question q270 = new Question("ORAL CAVITY",
+                "Podniebienie", "Jama ustna", "Przełyk", 2,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q270);
+
+        Question q271 = new Question("SINUS",
+                "Węzeł chłonny", "Nozdrza", "Zatoka", 3,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q271);
+
+        Question q272 = new Question("TONSIL",
+                "Migdałek", "Zatoka", "Trzemiączko", 1,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q272);
+
+        Question q273 = new Question("SWEAT GLANDS",
+                "Gruczoły łojowe", "Gruczoły potowe", "Gruczoły ślinowe", 2,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q273);
+
+        Question q274 = new Question("SEBACEOUS GLANDS",
+                "Gruczoły potowe", "Gruczoły ślinowe", "Gruczoły łojowe", 3,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q274);
+
+        Question q275 = new Question("SCAB",
+                "Strup", "Siniak", "Rana", 1,
+                Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
+        insertQuestion(q275);
     }
 
     public void addQuestion(Question question){
