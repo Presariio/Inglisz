@@ -1494,6 +1494,496 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 "Strup", "Siniak", "Rana", 1,
                 Question.DIFFICULTY_HARD, Category.CZESCI_CIALA);
         insertQuestion(q275);
+
+        Question q276 = new Question("PEACH",
+                "Kokos", "Brzoskwinia", "Wiśnia", 2,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
+        insertQuestion(q276);
+
+        Question q277 = new Question("CURRANT",
+                "Ananas", "Banan", "Porzeczka", 3,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
+        insertQuestion(q277);
+
+        Question q278 = new Question("PLUM",
+                "Śliwka", "Truskawka", "Jabłko", 1,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
+        insertQuestion(q278);
+
+        Question q279 = new Question("GOOSEBERRY",
+                "Ananas", "Agrest", "Cytryna", 2,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
+        insertQuestion(q279);
+
+        Question q280 = new Question("BERRY",
+                "A", "B", "Jagoda", 3,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
+        insertQuestion(q280);
+
+        Question q281 = new Question("BANANA",
+                "Banan", "Malina", "Gruszka", 1,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
+        insertQuestion(q281);
+
+        Question q282 = new Question("WILD STRAWBERRY",
+                "Ananas", "Poziomka", "Cytryna", 2,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
+        insertQuestion(q282);
+
+        Question q283 = new Question("RASPBERRY",
+                "Porzeczka", "Orzech ziemny", "Malina", 3,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
+        insertQuestion(q283);
+
+        Question q284 = new Question("LEMON",
+                "Cytryna", "Jagoda", "Kokos", 1,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
+        insertQuestion(q284);
+
+        Question q285 = new Question("PEANUT",
+                "Ananas", "Orzech ziemny", "Cytryna", 2,
+                Question.DIFFICULTY_EASY, Category.OWOCE);
+        insertQuestion(q285);
+
+        Question q286 = new Question("APRICOT",
+                "Mango", "Morela", "Kokos", 2,
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
+        insertQuestion(q286);
+
+        Question q287 = new Question("BLACKBERRY",
+                "Klementynka", "Pomarancza", "Borówka", 3,
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
+        insertQuestion(q287);
+
+        Question q288 = new Question("FIG",
+                "Figa", "Banan", "Limonka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
+        insertQuestion(q288);
+
+        Question q289 = new Question("DATE",
+                "Randka", "Aktyl", "Mango", 2,
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
+        insertQuestion(q289);
+
+        Question q290 = new Question("MULBERRY",
+                "Arbuz", "Słonecznik", "Morwa", 3,
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
+        insertQuestion(q290);
+
+        Question q291 = new Question("TAMARIND",
+                "Tamaryndowiec", "Brzoskwinia", "Cytryna", 1,
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
+        insertQuestion(q291);
+
+        Question q292 = new Question("QUINCE",
+                "Ananas", "Pigwa", "Arbuz", 2,
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
+        insertQuestion(q292);
+
+        Question q293 = new Question("REDCURRANT",
+                "Arbuz", "Słonecznik", "Czerwona porzeczka", 3,
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
+        insertQuestion(q293);
+
+        Question q294 = new Question("SUNFLOWER",
+                "Słonecznik", "Banan", "Gruszka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
+        insertQuestion(q294);
+
+        Question q295 = new Question("BLACKCURRANT",
+                "Ananas", "Czarna porzeczka", "Jeżyna", 2,
+                Question.DIFFICULTY_MEDIUM, Category.OWOCE);
+        insertQuestion(q295);
+
+        Question q296 = new Question("HAZELNUT",
+                "Arbuz", "Malina", "Orzech laskowy", 3,
+                Question.DIFFICULTY_HARD, Category.OWOCE);
+        insertQuestion(q296);
+
+        Question q297 = new Question("KIWIFRUIT",
+                "Kiwi", "Nektarynka", "Cytryna", 1,
+                Question.DIFFICULTY_HARD, Category.OWOCE);
+        insertQuestion(q297);
+
+        Question q298 = new Question("LIME",
+                "Jabłko", "Limonka", "Figa", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q298);
+
+        Question q299 = new Question("RAISINS",
+                "Papaja", "Marakuja", "Rodzynki", 3,
+                Question.DIFFICULTY_HARD, Category.OWOCE);
+        insertQuestion(q299);
+
+        Question q300 = new Question("PAPAYA",
+                "Papaja", "Marakuja", "Nektarynka", 1,
+                Question.DIFFICULTY_HARD, Category.OWOCE);
+        insertQuestion(q300);
+
+        Question q301 = new Question("POMEGRANATE",
+                "Orzech włoski", "Granat", "Pigwa", 2,
+                Question.DIFFICULTY_HARD, Category.OWOCE);
+        insertQuestion(q301);
+
+        Question q302 = new Question("ROSE HIP",
+                "Pigwa", "Banan", "Owoc dzikiej róży", 3,
+                Question.DIFFICULTY_HARD, Category.OWOCE);
+        insertQuestion(q302);
+
+        Question q303 = new Question("PERSIMMON",
+                "Persymona", "Banan", "Gruszka", 1,
+                Question.DIFFICULTY_HARD, Category.OWOCE);
+        insertQuestion(q303);
+
+        Question q304 = new Question("ALMOND",
+                "Morwa", "Migdał", "Morela", 2,
+                Question.DIFFICULTY_HARD, Category.OWOCE);
+        insertQuestion(q304);
+
+        Question q305 = new Question("DRAGON FRUIT",
+                "Arbuz", "Poziomka", "Pitaja", 3,
+                Question.DIFFICULTY_HARD, Category.OWOCE);
+        insertQuestion(q305);
+
+        Question q306 = new Question("CHAIR",
+                "Krzesło", "Biurko", "Telewizor", 1,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q306);
+
+        Question q307 = new Question("ARMCHAIR",
+                "Krzesło", "Fotel", "Kanapa", 2,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q307);
+
+        Question q308 = new Question("TABLE",
+                "Tablica", "Szafa", "Stół", 3,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q308);
+
+        Question q309 = new Question("WARDROBE",
+                "Szafa", "Lodówka", "Łóżko", 1,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q309);
+
+        Question q310 = new Question("SOFA",
+                "Łóżko", "Kanapa", "Biurko", 2,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q310);
+
+        Question q311 = new Question("FRIDGE",
+                "Zamrażalka", "Drzwi", "Lodówka", 3,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q311);
+
+        Question q312 = new Question("BED",
+                "Łóżko", "Kredens", "Wanna", 1,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q312);
+
+        Question q313 = new Question("WASHBASIN",
+                "Schody", "Umywalka", "Okno", 2,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q313);
+
+        Question q314 = new Question("SINK",
+                "Okno", "Kuchenka", "Zlew", 3,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q314);
+
+        Question q315 = new Question("CUPBOARD",
+                "Kredens", "Fotel", "Umywalka", 1,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q315);
+
+        Question q316 = new Question("TELEVISION SET",
+                "Drzwi", "Telewizor", "Kuchenka", 2,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q316);
+
+        Question q317 = new Question("COOKER",
+                "Schody", "Stół", "Kuchenka", 3,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q317);
+
+        Question q318 = new Question("DOOR",
+                "Drzwi", "Krzesło", "LALKA", 1,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q318);
+
+        Question q319 = new Question("Window",
+                "Telewizor", "Okno", "Umywalka", 2,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q319);
+
+        Question q320 = new Question("Stairs",
+                "Kanapa", "Fotel", "Schody", 3,
+                Question.DIFFICULTY_EASY, Category.MEBLE);
+        insertQuestion(q320);
+
+        Question q321 = new Question("LAMP",
+                "Lampa", "Kanapa", "Kredens", 1,
+                Question.DIFFICULTY_MEDIUM, Category.MEBLE);
+        insertQuestion(q321);
+
+        Question q322 = new Question("Carpet",
+                "Lampa", "Dywan", "Lustro", 2,
+                Question.DIFFICULTY_MEDIUM, Category.MEBLE);
+        insertQuestion(q322);
+
+        Question q323 = new Question("MIRROR",
+                "Lodówka", "Zegar", "Lustro", 3,
+                Question.DIFFICULTY_MEDIUM, Category.MEBLE);
+        insertQuestion(q323);
+
+        Question q324 = new Question("Shelf",
+                "Półka", "Szafa", "Kredens", 1,
+                Question.DIFFICULTY_MEDIUM, Category.MEBLE);
+        insertQuestion(q324);
+
+        Question q325 = new Question("BOOKSHELF",
+                "Komoda", "Półka na książki", "Półka", 2,
+                Question.DIFFICULTY_MEDIUM, Category.MEBLE);
+        insertQuestion(q325);
+
+        Question q326 = new Question("CHANDELIER",
+                "Żyrandol", "Stolik do kawy", "Komoda", 1,
+                Question.DIFFICULTY_MEDIUM, Category.MEBLE);
+        insertQuestion(q326);
+
+        Question q327 = new Question("CHEST OF DRAWERS",
+                "Półka", "Komoda", "Stolik do kawy", 2,
+                Question.DIFFICULTY_MEDIUM, Category.MEBLE);
+        insertQuestion(q327);
+
+        Question q328 = new Question("BLINDS",
+                "Dekoracje", "Dywanik", "Żaluzje", 3,
+                Question.DIFFICULTY_MEDIUM, Category.MEBLE);
+        insertQuestion(q328);
+
+        Question q329 = new Question("CURTAINS",
+                "Zasłony", "Żaluzje", "Plakat", 1,
+                Question.DIFFICULTY_MEDIUM, Category.MEBLE);
+        insertQuestion(q329);
+
+        Question q330 = new Question("BENCH",
+                "Fotel", "Ławka", "Krzesło", 2,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q330);
+
+        Question q331 = new Question("CRADLE",
+                "Biurko", "Kredens", "Kołyska", 3,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q331);
+
+        Question q332 = new Question("FOOTREST",
+                "Podnóżek", "Hamak", "Lampa", 1,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q332);
+
+        Question q333 = new Question("MATTERESS",
+                "Lustro", "Materac", "Dywanik", 2,
+                Question.DIFFICULTY_MEDIUM, Category.MEBLE);
+        insertQuestion(q333);
+
+        Question q334 = new Question("VANITY",
+                "Materac", "Lustro", "Toaletka", 3,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q334);
+
+        Question q335 = new Question("WATERBED",
+                "Łóżko wodne", "Łóżko", "Szafa", 1,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q335);
+
+        Question q336 = new Question("DISHWASHER",
+                "Lodówka", "Zmywarka", "Zlew", 2,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q336);
+
+        Question q337 = new Question("STOVE",
+                "Pralka", "Stół", "Kuchenka", 3,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q337);
+
+        Question q338 = new Question("AIR CONDITIONING",
+                "Klimatyzacja", "Odświeżacz powietrza", "Wiatrak", 1,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q338);
+
+        Question q339 = new Question("VIDEO GAME CONSOLE",
+                "Radio", "Konsola do gier", "Odtwarzacz DVD", 2,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q339);
+
+        Question q340 = new Question("FIREPLACE",
+                "Biurko", "Fotel", "Kominek", 3,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q340);
+
+        Question q341 = new Question("SHOWER",
+                "Prysznic", "Wieszak na ręcznik", "Komin", 1,
+                Question.DIFFICULTY_HARD, Category.MEBLE);
+        insertQuestion(q341);
+
+        Question q342 = new Question("SKIRT",
+                "Skarpetka", "Spódnica", "Sukienka", 2,
+                Question.DIFFICULTY_EASY, Category.UBRANIA);
+        insertQuestion(q342);
+
+        Question q343 = new Question("SHORTS",
+                "Buty", "Podkoszulka", "Spodenki", 3,
+                Question.DIFFICULTY_EASY, Category.UBRANIA);
+        insertQuestion(q343);
+
+        Question q344 = new Question("SHOES",
+                "Buty", "But", "Spodenki", 1,
+                Question.DIFFICULTY_EASY, Category.UBRANIA);
+        insertQuestion(q344);
+
+        Question q345 = new Question("TIE",
+                "Muszka", "Krawat", "Opaska", 2,
+                Question.DIFFICULTY_EASY, Category.UBRANIA);
+        insertQuestion(q345);
+
+        Question q346 = new Question("FUR COAT",
+                "Kurtka", "Kożuch", "Futro", 3,
+                Question.DIFFICULTY_EASY, Category.UBRANIA);
+        insertQuestion(q346);
+
+        Question q347 = new Question("SUIT",
+                "Garnitur", "Stanik", "Buty", 1,
+                Question.DIFFICULTY_EASY, Category.UBRANIA);
+        insertQuestion(q347);
+
+        Question q348 = new Question("BOW TIE",
+                "Buty", "Muszka", "Krawat", 2,
+                Question.DIFFICULTY_EASY, Category.UBRANIA);
+        insertQuestion(q348);
+
+        Question q349 = new Question("DENIM JACKET",
+                "Koszula", "Sweter", "Kurtka dżinsowa", 3,
+                Question.DIFFICULTY_EASY, Category.UBRANIA);
+        insertQuestion(q349);
+
+        Question q350 = new Question("Trainers",
+                "Buty sportowe", "Kozaki", "Szpilki", 1,
+                Question.DIFFICULTY_EASY, Category.UBRANIA);
+        insertQuestion(q350);
+
+        Question q351 = new Question("CAP",
+                "Szalik", "Czapka", "Kubek", 2,
+                Question.DIFFICULTY_EASY, Category.UBRANIA);
+        insertQuestion(q351);
+
+        Question q352 = new Question("HAT",
+                "Kapelusz", "Szalik", "Koszula", 1,
+                Question.DIFFICULTY_MEDIUM, Category.UBRANIA);
+        insertQuestion(q352);
+
+        Question q353 = new Question("JUMPER",
+                "Rękawiczki", "Sweter", "Szalik", 2,
+                Question.DIFFICULTY_MEDIUM, Category.UBRANIA);
+        insertQuestion(q353);
+
+        Question q354 = new Question("SCARF",
+                "Sweter", "Rękawiczki", "Szalik", 3,
+                Question.DIFFICULTY_MEDIUM, Category.UBRANIA);
+        insertQuestion(q354);
+
+        Question q355 = new Question("TRACKSUIT",
+                "Dres", "Garnitur", "Bluzka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.UBRANIA);
+        insertQuestion(q355);
+
+        Question q356 = new Question("SHIRT",
+                "Buty", "Koszula", "Kapcie", 2,
+                Question.DIFFICULTY_MEDIUM, Category.UBRANIA);
+        insertQuestion(q356);
+
+        Question q357 = new Question("SLIPPERS",
+                "Piżama", "Skarpetki", "Kapcie", 3,
+                Question.DIFFICULTY_MEDIUM, Category.UBRANIA);
+        insertQuestion(q357);
+
+        Question q358 = new Question("GLOVES",
+                "Rękawiczki", "Skarpetki", "Szalik", 1,
+                Question.DIFFICULTY_MEDIUM, Category.UBRANIA);
+        insertQuestion(q358);
+
+        Question q359 = new Question("SOCKS",
+                "Rękawiczki", "Skarpetki", "Szalik", 2,
+                Question.DIFFICULTY_MEDIUM, Category.UBRANIA);
+        insertQuestion(q359);
+
+        Question q360 = new Question(".Medium: B is correct",
+                "A", "B", "C", 2,
+                Question.DIFFICULTY_MEDIUM, Category.WARZYWA);
+        insertQuestion(q360);
+
+        Question q361 = new Question("JEANS",
+                "Dresy", "Czapka", "Dżinsy", 3,
+                Question.DIFFICULTY_MEDIUM, Category.UBRANIA);
+        insertQuestion(q361);
+
+        Question q362 = new Question("BOOT",
+                "Kozak", "Szalik", "Czapka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.UBRANIA);
+        insertQuestion(q362);
+
+        Question q363 = new Question("SWIMMING COSTUME",
+                "Skarpetki", "Kostium kąpielowy", "Krawat", 2,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q363);
+
+        Question q364 = new Question("TIGHTS",
+                "Pończochy", "Podkolanówki", "Rajstopy", 3,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q364);
+
+        Question q365 = new Question("COLLAR",
+                "Kołnierz", "Bluzka", "Polar", 1,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q365);
+
+        Question q366 = new Question("HEEL",
+                "Pulower", "Obcas", "Kurtka", 2,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q366);
+
+        Question q367 = new Question("PANTS",
+                "Koszulka", "Skarpetki", "Majtki", 3,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q367);
+
+        Question q368 = new Question("PULLOVER",
+                "Pulower", "Sweter", "Dres", 1,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q368);
+
+        Question q369 = new Question("SLEEVE",
+                "Czapka", "Rękaw", "Nauszniki", 2,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q369);
+
+        Question q370 = new Question("SWIMMING TRUNKS",
+                "Dres", "Fartuch", "Kąpielówki", 3,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q370);
+
+        Question q371 = new Question("UNDERWEAR",
+                "Bielizna", "Gorset", "Fartuch", 1,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q371);
+
+        Question q372 = new Question("VEST",
+                "Mundur", "Kamizelka", "Sweter", 2,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q372);
+
+        Question q373 = new Question("BELT",
+                "Buty", "Szelki", "Pasek", 3,
+                Question.DIFFICULTY_HARD, Category.UBRANIA);
+        insertQuestion(q373);
     }
 
     public void addQuestion(Question question){
