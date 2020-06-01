@@ -1984,6 +1984,476 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 "Buty", "Szelki", "Pasek", 3,
                 Question.DIFFICULTY_HARD, Category.UBRANIA);
         insertQuestion(q373);
+
+        Question q374 = new Question("COOK",
+                "Kucharz", "Kelner", "Trener", 1,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q374);
+
+        Question q375 = new Question("DOCTOR",
+                "Nauczyciel", "Lekarz", "Prezydent", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q375);
+
+        Question q376 = new Question("DRIVER",
+                "Inżynier", "Dentysta", "Kierowca", 3,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q376);
+
+        Question q377 = new Question("TEACHER",
+                "Nauczyciel/ka", "Inżynier", "Kierownik", 1,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q377);
+
+        Question q378 = new Question("WAITER/WAITRESS",
+                "Monter", "Kelner/ka", "Kucharz", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q378);
+
+        Question q379 = new Question("ACTOR/ACTRES",
+                "Piosenkarz/rka", "Atysta/ka", "Aktor/ka", 3,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q379);
+
+        Question q380 = new Question("BUSINESSMAN/BUSINESSWOMAN",
+                "Biznesmen/ka", "Dyrektor/ka", "Recepcjonista/ka", 1,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q380);
+
+        Question q381 = new Question("CAR MECHANIC",
+                "Kierowca", "Mechanik samochodowy", "Kucharz", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q381);
+
+        Question q382 = new Question("CHEF",
+                "Kierownik", "Kucharz", "Szef kuchni", 3,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q382);
+
+        Question q383 = new Question("CLEANER",
+                "Sprzątacz/ka", "Dentysta/ka", "Pielęgniarz/ka", 1,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q383);
+
+        Question q384 = new Question("DANCER",
+                "Artysta/ka", "Tancerz/ka", "Piłkarz/ka", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q384);
+
+        Question q385 = new Question("DENTIST",
+                "Pielęgniarz/ka", "Lekarz/ka", "Dentysta/ka", 3,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q385);
+
+        Question q386 = new Question("ENGINEER",
+                "Inżynier", "Mechanik samochodowy", "Spawacz", 1,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q386);
+
+        Question q387 = new Question("FARMER",
+                "Opiekun/ka zwierząt", "Rolnik", "Malarz/ka", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q387);
+
+        Question q388 = new Question("FOOTBALLER",
+                "Koszykarz", "Siatkarz", "Piłkarz", 3,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q388);
+
+        Question q389 = new Question("TOUR GUIDE",
+                "Przewodnik wycieczek", "Fotograf", "Pilot", 1,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q389);
+
+        Question q390 = new Question("PHOTOGRAPHER",
+                "Malarz/ka", "Fotograf", "Artysta/ka", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q390);
+
+        Question q391 = new Question("WRITER",
+                "Lektor", "Redaktor/ka", "Pisarz/ka", 3,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q391);
+
+        Question q392 = new Question("ARTIST",
+                "Artysta/ka", "Malarz/ka", "Tancerz/ka", 1,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q392);
+
+        Question q393 = new Question("SINGER",
+                "Muzyk", "Piosenkarz/ka", "Aktor/ka", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q393);
+
+        Question q394 = new Question("POLICE OFFICER",
+                "Strażak", "Ratownik", "Funkcjonariusz/ka policji", 3,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q394);
+
+        Question q395 = new Question("MANAGER",
+                "Menadżer/ka", "Szeg kuchni", "Handlowiec", 1,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q395);
+
+        Question q396 = new Question("SECRETARY",
+                "Handlowiec", "Sekretarz/ka", "Przedsiębiorca", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q396);
+
+        Question q397 = new Question("PILOT",
+                "Kapitan", "Kierowca", "Pilot", 3,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q397);
+
+        Question q398 = new Question("NURSE",
+                "Pielęgniarz/ka", "Lekarz/ka", "Ordynator/ka", 1,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q398);
+
+        Question q399 = new Question("TAXI DRIVER",
+                "Kierowca ciężarówki", "Kierowca taksówki", "Kierowca wyścigowy", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q399);
+
+        Question q400 = new Question("RECEPTIONIST",
+                "Pisarz/ka", "Sekretarz/ka", "Recepcjonista/ka", 3,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q400);
+
+        Question q401 = new Question("VET",
+                "Lekarz", "Weterynarz", "Pielęgniarz/ka", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q401);
+
+        Question q402 = new Question("BAKER",
+                "Kucharz/ka", "Piekarz", "Szef kuchni", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q402);
+
+        Question q403 = new Question("HAIRDRESSER",
+                "Projektant/ka", "Stylista/ka", "Fryzjer/ka", 3,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q403);
+
+        Question q404 = new Question("SOLDIER",
+                "Żołnierz", "Spawacz", "Generał", 1,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q404);
+
+        Question q405 = new Question("TRAINER",
+                "Sportowiec", "Trener", "Pikarz", 2,
+                Question.DIFFICULTY_EASY, Category.ZAWODY);
+        insertQuestion(q405);
+
+        Question q406 = new Question("POSTMAN",
+                "Akwizytor", "Windykator", "Listonosz", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q406);
+
+        Question q407 = new Question("ARCHITECT",
+                "Architekt/ka", "Brygadzista/ka", "Inspektor/ka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q407);
+
+        Question q408 = new Question("JOURNALIST",
+                "Prezenter/ka telewiyjna", "Dziennikarz/ka", "Wydawca", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q408);
+
+        Question q409 = new Question("DETECTIVE",
+                "Inspektor", "Policjant", "Detektyw", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q409);
+
+        Question q410 = new Question("PRIEST",
+                "Ksiądz", "Biskup", "Papierz", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q410);
+
+        Question q411 = new Question("DISC JOCKEY",
+                "Kompozytor", "Didżej", "Piosenkarz/ka", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q411);
+
+        Question q412 = new Question("FIREFIGHTER",
+                "Policjant", "Ratownik", "Strażak", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q412);
+
+        Question q413 = new Question("GUARD",
+                "Strażnik", "Ochroniarz osobisty", "Policjant", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q413);
+
+        Question q414 = new Question("SCIENTIST",
+                "Lekarz/ka", "Naukowiec", "Archeolog", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q414);
+
+        Question q415 = new Question("MODEL",
+                "Wydawca", "Projektant/ka mody", "Model/ka", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q415);
+
+        Question q416 = new Question("BARMAN",
+                "Barman/ka", "Kelner/ka", "Kucharz/ka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q416);
+
+        Question q417 = new Question("BUILDER",
+                "Inżynier", "Budowniczy", "Brygadzista", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q417);
+
+        Question q418 = new Question("ACCOUNTANT",
+                "Doradca prawny", "Sekretarz/ka", "Księgowy/a", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q418);
+
+        Question q419 = new Question("DIRECTOR",
+                "Reżyser", "Dyrektor", "Menadżer", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q419);
+
+        Question q420 = new Question("BABYSITTER",
+                "Położna", "Opiekunka do dziecka", "Przedszkolanka", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q420);
+
+        Question q421 = new Question("BARBER",
+                "Projektant mody męskiej", "Fryzjer damski", "Fryzjer męski", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q421);
+
+        Question q422 = new Question("PHARMACIST",
+                "Farmaceuta/ka", "Lekarz/ka", "Ordynator", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q422);
+
+        Question q423 = new Question("GARDENER",
+                "Pracownik zoo", "Ogrodnik", "Kwiaciarz/ka", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q423);
+
+        Question q424 = new Question("LIFEGUARD",
+                "Strażnik", "Ochroniarz osobisty", "Ratownik", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q424);
+
+        Question q425 = new Question("BANKER",
+                "Bankier", "Sekretarz/ka", "Komornik", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q425);
+
+        Question q426 = new Question("SHOEMAKER",
+                "Krawiec", "Szewc", "Projektant/ka", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q426);
+
+        Question q427 = new Question("PLUMBER",
+                "Dekarz", "Inżynier", "Hydraulik", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q427);
+
+        Question q428 = new Question("CRITIC",
+                "Krytyk", "Sędzia", "Polityk", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q428);
+
+        Question q429 = new Question("COPYWRITER",
+                "Projektant/ka", "Autor tekstów reklamowych", "Pisarz/ka", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q429);
+
+        Question q430 = new Question("PSYCHOLOGIST",
+                "Trener/ka", "Pracownik fizyczny", "Psycholog", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q430);
+
+        Question q431 = new Question("EDITOR",
+                "Wydawca", "Autor tekstów reklamowych", "Informatyk", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q431);
+
+        Question q432 = new Question("INVESTIGATOR",
+                "Detektyw", "Śledczy", "Policjant/ka", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q432);
+
+        Question q433 = new Question("CONDUCTOR",
+                "Inżynier", "Przewodnik", "Dyrygent", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q433);
+
+        Question q434 = new Question("LIBRARIAN",
+                "Bibliotekarz/ka", "Księgowy/a", "Sekretarz/ka", 1,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q434);
+
+        Question q435 = new Question("JUDGE",
+                "Krytyk", "Sędzia", "Agent ubezpieczeniowy", 2,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q435);
+
+        Question q436 = new Question("FLIGHT ATTENDANT",
+                "Mechanik samolotów", "Pilot", "Steward/essa", 3,
+                Question.DIFFICULTY_MEDIUM, Category.ZAWODY);
+        insertQuestion(q436);
+
+        Question q437 = new Question("INSURANCE AGENT",
+                "Agent ubezpieczeń", "Agent specjalny", "Śledczy", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q437);
+
+        Question q438 = new Question("WELDER",
+                "Tynkarz", "Spawacz", "Pracownik fabryki", 2,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q438);
+
+        Question q439 = new Question("STUNTMAN",
+                "Analityk", "Aktor/ka", "Kaskader", 3,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q439);
+
+        Question q440 = new Question("CARPENTER",
+                "Cieśla", "Spawacz", "Kowal", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q440);
+
+        Question q441 = new Question("BLACKSMITH",
+                "Agent ubezpieczeniowy", "Kowal", "Kominiarz", 2,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q441);
+
+        Question q442 = new Question("WATCHMAKER",
+                "Ślusarz", "Serwisant AGD", "Zegarmistrz", 3,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q442);
+
+        Question q443 = new Question("TAILOR",
+                "Krawiec męski", "Krawiec damski", "Szewc", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q443);
+
+        Question q444 = new Question("LOCKSMITH",
+                "Kowal", "Ślusarz", "Cieśla", 2,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q444);
+
+        Question q445 = new Question("SOLICITOR",
+                "Prokurator", "Doradca zawodowy", "Adwokat", 3,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q445);
+
+        Question q446 = new Question("BLUE-COLLAR WORKER",
+                "Pracownik fizyczny", "Pracownik fabryki", "Spawacz", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q446);
+
+        Question q447 = new Question("WELDER",
+                "Kaskader", "Spawacz", "Kominiarz", 2,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q447);
+
+        Question q448 = new Question("FURRIER",
+                "Złotnik", "Krawiec", "Kuśnierz", 3,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q448);
+
+        Question q449 = new Question("BAILIFF",
+                "Komornik", "Akwizytor", "Windykator", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q449);
+
+        Question q450 = new Question("TURNER",
+                "Dekarz", "Tokarz", "Kuśnierz", 2,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q450);
+
+        Question q451 = new Question("DEBT COLLECTOR",
+                "Komornik", "Makler giełdowy", "Windykator", 3,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q451);
+
+        Question q452 = new Question("UNDERTAKER",
+                "Grabarz", "Ministrant", "Arcybiskup", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q452);
+
+        Question q453 = new Question("FOREMAN",
+                "Pracownik fizyczny", "Brygadzista", "Tkacz", 2,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q453);
+
+        Question q454 = new Question("STOCKBROKER",
+                "Bankier", "Prawnik", "Makler giełdowy", 3,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q454);
+
+        Question q455 = new Question("WEAVER",
+                "Tkacz", "Szwacz", "Szewc", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q455);
+
+        Question q456 = new Question("REFUSE COLLECTOR",
+                "Poborca podatkowy", "Śmieciarz", "Sprzątacz", 2,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q456);
+
+        Question q457 = new Question("ROOFER",
+                "Tynkarz", "Tokarz", "Dekarz", 3,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q457);
+
+        Question q458 = new Question("GOLDSMITH",
+                "Złotnik", "Jubiler", "Zegarmistrz", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q458);
+
+        Question q459 = new Question("GRAPHIC DESIGNER",
+                "Informatyk", "Grafik", "Rysownik", 2,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q459);
+
+        Question q460 = new Question("FORESTER",
+                "Leśniczy", "Drwal", "Leśnik", 3,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q460);
+
+        Question q461 = new Question("SURGEON",
+                "Chirurg", "Pediatra", "Laryngolog", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q461);
+
+        Question q462 = new Question("MAID",
+                "Sprzątacz/ka", "Pokojówka", "Recepcjonista/ka", 2,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q462);
+
+        Question q463 = new Question("GLAZIER",
+                "Murarz", "Hydraulik", "Szklarz", 3,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q463);
+
+        Question q464 = new Question("BRICKLAYER",
+                "Murarz", "Cieśla", "Tynkarz", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q464);
+
+        Question q465 = new Question("MIDWIFE",
+                "Pielęgniarz/ka", "Położna", "Chirurg", 2,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q465);
+
+        Question q466 = new Question("MINER",
+                "Hutnik", "Garncarz", "Górnik", 3,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q466);
+
+        Question q467 = new Question("OPTICIAN",
+                "Okulista", "Laryngolog", "Chirurg plastyczny", 1,
+                Question.DIFFICULTY_HARD, Category.ZAWODY);
+        insertQuestion(q467);
     }
 
     public void addQuestion(Question question){
