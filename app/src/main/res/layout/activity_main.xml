@@ -25,6 +25,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:text="Highscore: 0"
+        android:textStyle="bold"
         android:textSize="25sp" />
 
     <Button
@@ -46,14 +47,35 @@
         android:paddingHorizontal="30dp"
         android:textSize="18dp"
         android:layout_marginBottom="10dp"
-        android:text="Dodaj slowo"/>
+        android:text="Dodaj słowo"/>
+
+    <TextView
+        android:id="@+id/text_view_wybierz_kategorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20sp"
+        android:textSize="18dp"
+        android:layout_below="@id/button_add_word"
+        android:text="Wybierz kategorię:" />
+
+    <TextView
+        android:id="@+id/text_view_wybierz_trudnosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_wybierz_kategorie"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:text="Wybierz poziom trudności:" />
 
     <Spinner
         android:id="@+id/spinner_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/button_add_word"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="200dp"
+        android:layout_centerHorizontal="false"
         android:layout_marginTop="20dp"/>
 
     <Spinner
@@ -61,7 +83,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/spinner_category"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="240dp"
+        android:layout_centerHorizontal="false"
         android:layout_marginTop="20dp"/>
 
 </RelativeLayout>

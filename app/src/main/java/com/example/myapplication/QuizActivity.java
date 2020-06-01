@@ -87,8 +87,8 @@ public class QuizActivity extends AppCompatActivity {
         String categoryName = intent.getStringExtra(MainActivity.EXTRA_CATEGORY_NAME);
         String difficulty = intent.getStringExtra(MainActivity.EXTRA_DIFFICULTY);
 
-        textViewCategory.setText("Category: " + categoryName);
-        textViewDifficulty.setText("Difficulty: " + difficulty);
+        textViewCategory.setText("Kategoria: " + categoryName);
+        textViewDifficulty.setText("Poziom trudności: " + difficulty);
 
         if(savedInstanceState == null) {
             QuizDbHelper dbHelper = QuizDbHelper.getInstance(this);
@@ -145,9 +145,9 @@ public class QuizActivity extends AppCompatActivity {
             rb3.setText(currentQuestion.getOption3());
 
             questionCounter++;
-            textViewQuestionCount.setText("Question: " + questionCounter + "/" + questionCountTotal);
+            textViewQuestionCount.setText("Pytanie: " + questionCounter + "/" + questionCountTotal);
             answered = false;
-            buttonConfirmNext.setText("Confirm");
+            buttonConfirmNext.setText("Potwierdź");
 
             timeLeftInMillis = COUNTDOWN_IN_MILLIS;
             startCountDown();
@@ -198,7 +198,7 @@ public class QuizActivity extends AppCompatActivity {
 
         if (answerNr == currentQuestion.getAnswerNr()) {
             score++;
-            textViewScore.setText("Score: " + score);
+            textViewScore.setText("Punkty: " + score);
         }
 
         showSolution();
@@ -212,22 +212,22 @@ public class QuizActivity extends AppCompatActivity {
         switch (currentQuestion.getAnswerNr()) {
             case 1:
                 rb1.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer 1 is correct");
+                textViewQuestion.setText("Odpowiedź nr 1 jest prawidłowa");
                 break;
             case 2:
                 rb2.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer 2 is correct");
+                textViewQuestion.setText("Odpowiedź nr 2 jest prawidłowa");
                 break;
             case 3:
                 rb3.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer 3 is correct");
+                textViewQuestion.setText("Odpowiedź nr 3 jest prawidłowa");
                 break;
         }
 
         if (questionCounter < questionCountTotal) {
-            buttonConfirmNext.setText("Next");
+            buttonConfirmNext.setText("Następne pytanie");
         } else {
-            buttonConfirmNext.setText("Finish");
+            buttonConfirmNext.setText("Zakończ");
         }
     }
 

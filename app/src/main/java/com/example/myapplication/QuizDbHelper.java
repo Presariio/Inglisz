@@ -13,7 +13,7 @@ import java.util.List;
 
 public class QuizDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "MyAwesomeQuiz.db";
-    private static final int DATABASE_VERSION = 14;
+    private static final int DATABASE_VERSION = 15;
 
 
 
@@ -2454,6 +2454,321 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 "Okulista", "Laryngolog", "Chirurg plastyczny", 1,
                 Question.DIFFICULTY_HARD, Category.ZAWODY);
         insertQuestion(q467);
+
+        Question q468 = new Question("AEROBICS",
+                "Joga", "Aerobik", "Dżogging", 2,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q468);
+
+        Question q469 = new Question("ARCHERY",
+                "Strzelanie", "Rzut oszczepem", "Łucznictwo", 3,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q469);
+
+        Question q470 = new Question("ATHLETICS",
+                "Lekkoatletyka", "Zapasy", "Maraton", 1,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q470);
+
+        Question q471 = new Question("BADMINTON",
+                "Tenis ziemny", "Badminton", "Tenis stołowy", 2,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q471);
+
+        Question q472 = new Question("BASEBALL",
+                "A", "B", "C", 3,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q472);
+
+        Question q473 = new Question("BASKETBALL",
+                "Koszykówka", "Siatkówka", "Piłka ręczna", 1,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q473);
+
+        Question q474 = new Question("BOXING",
+                "Sumo", "Boks", "Dżudo", 2,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q474);
+
+        Question q475 = new Question("BRIDGE",
+                "Chińczyk", "Szachy", "Brydż", 3,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q475);
+
+        Question q476 = new Question("CAR RACING",
+                "Wyścigi samochodowe", "Żużel", "Wyścigi konno", 1,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q476);
+
+        Question q477 = new Question("CHESS",
+                "Warcaby", "Szachy", "Chińczyk", 2,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q477);
+
+        Question q478 = new Question("COMBAT SPORTS",
+                "Sporty motorowe", "Sporty wodne", "Sporty walki", 3,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q478);
+
+        Question q479 = new Question("CRICKET",
+                "Krykiet", "Rugby", "Golf", 1,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q479);
+
+        Question q480 = new Question("CYCLING",
+                "Łyżwiarstwo", "Kolarstwo", "Kajakarstwo", 2,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q480);
+
+        Question q481 = new Question("DARTS",
+                "Rzut oszczepem", "Bierki", "Rzutki", 3,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q481);
+
+        Question q482 = new Question("DISCUS",
+                "Rzut dyskiem", "Rzut młotem", "Rzut oszczepem", 1,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q482);
+
+        Question q483 = new Question("DIVING",
+                "Pływanie", "Nurkowanie", "Narty wodne", 2,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q483);
+
+        Question q484 = new Question("GOLF",
+                "Tenis", "Krykiet", "Golf", 3,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q484);
+
+        Question q485 = new Question("GYMNASTICS",
+                "Gimnastyka", "Aerobik", "Dżoging", 1,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q485);
+
+        Question q486 = new Question("FOOTBAL",
+                "Koszykówka", "Piłka nożna", "Piłka ręczna", 2,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q486);
+
+        Question q487 = new Question("FENCING",
+                "Sumo", "Zapasy", "Szermierka", 3,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q487);
+
+        Question q488 = new Question("HAMMER THROWING",
+                "Rzut młotem", "Rzut oszczepem", "Rzut dyskiem", 1,
+                Question.DIFFICULTY_EASY, Category.SPORT);
+        insertQuestion(q488);
+
+        Question q489 = new Question("HORSE RACING",
+                "Wyścigi psich zaprzęgów", "Wyścigi konne", "Wyścigi samochodowe", 2,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q489);
+
+        Question q490 = new Question("INDIVIDUAL SPORTS",
+                "Sporty drużynowe", "Sporty drużynowo indywidualne", "Sporty indywidualne", 3,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q490);
+
+        Question q491 = new Question("TEAM SPORTS",
+                "Sporty drużynowe", "Sporty indywidualne", "Sporty drużynowo indywidualne", 1,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q491);
+
+        Question q492 = new Question("LONG JUMP",
+                "Długi skok", "Skok w dal", "Skok wzwyż", 2,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q492);
+
+        Question q493 = new Question("HIGH JUMP",
+                "Wysoki skok", "Skok w dal", "Skok wzwyż", 3,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q493);
+
+        Question q494 = new Question("RELAY RACE",
+                "Sztafeta", "Bieg z przeszkodami", "Maraton", 1,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q494);
+
+        Question q495 = new Question("LONG-DISTANCE RUNNING",
+                "Bieg krótkodystansowy", "Bieg długodystansowy", "Maraton", 2,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q495);
+
+        Question q496 = new Question("SAILING",
+                "Narty wodne", "Pływanie na desce", "Żeglarstwo", 3,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q496);
+
+        Question q497 = new Question("ICE-SKATING",
+                "Łyżwiarstwo", "Hokej", "Pływanie", 1,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q497);
+
+        Question q498 = new Question("SKI JUMPING",
+                "Jazda na nartach", "Skoki narciarskie", "Łyżwiarstwo", 2,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q498);
+
+        Question q499 = new Question("SKIING",
+                "Skoki narciarskie", "Hokej", "Jazda na nartach", 3,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q499);
+
+        Question q500 = new Question("SWIMMING",
+                "Pływanie", "Narty wodne", "Nurkowanie", 1,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q500);
+
+        Question q501 = new Question("VOLLEYBALL",
+                "Koszykówka", "Siatkówka", "Piłka ręczna", 2,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q501);
+
+        Question q502 = new Question("WEIGHTLIFTING",
+                "Rzut młotem", "Zapasy", "Podnoszenie ciężarów", 3,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q502);
+
+        Question q503 = new Question("WINDSURFING",
+                "Pływanie na desce", "Narty wodne", "Nurkowanie", 1,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q503);
+
+        Question q504 = new Question("WRESTLING",
+                "Boks", "Zapasy", "Sumo", 2,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q504);
+
+        Question q505 = new Question("YOGA",
+                "Aerobik", "Dżoging", "Joga", 3,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q505);
+
+        Question q506 = new Question("ARCHERY",
+                "Łucznictwo", "Rzut dyskiem", "Strzelectwo", 1,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q506);
+
+        Question q507 = new Question("BILLIARD",
+                "Kręgle", "Bilard", "Rzutki", 2,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q507);
+
+        Question q508 = new Question("BUNGEE JUMPING",
+                "Akrobacje spadochronowe", "Skok wzwyż", "Skoki na bungee", 3,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q508);
+
+        Question q509 = new Question("CANOEING",
+                "Kajakarstwo", "Żeglarstwo", "Wioślarstwo", 1,
+                Question.DIFFICULTY_MEDIUM, Category.SPORT);
+        insertQuestion(q509);
+
+        Question q510 = new Question("CRICKET",
+                "Rugby", "Krykiet", "Golf", 2,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q510);
+
+        Question q511 = new Question("HANDBALL",
+                "Koszykówka", "Siatkówka", "Piłka ręczna", 3,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q511);
+
+        Question q512 = new Question("HANG-GLIDING",
+                "Lotniarstwo", "Latanie szybowcem", "Latanie samolotem", 1,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q512);
+
+        Question q513 = new Question("ICE-HOCKEY",
+                "Bobslej", "Hokej", "Łyżwiarstwo", 2,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q513);
+
+        Question q514 = new Question("PARACHUTING",
+                "Paralotniarstwo", "Akrobacje spadochronowe", "Spadochroniarstwo", 3,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q514);
+
+        Question q515 = new Question("RUGBY",
+                "Rugby", "Krykiet", "Baseball", 1,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q515);
+
+        Question q516 = new Question("ROWING",
+                "Pływanie", "Wioślarstwo", "Kajakarstwo", 2,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q516);
+
+        Question q517 = new Question("MARATHON",
+                "Lekkoatletyka", "Triatlon", "Maraton", 3,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q517);
+
+        Question q518 = new Question("SKATEBOARDING",
+                "Jazda na deskorolce", "Pływanie na desce", "Jazda na wrotkach", 1,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q518);
+
+        Question q519 = new Question("INDOOR SPORTS",
+                "Sporty na świeżym powietrzu", "Sporty halowe", "Sporty ekstremalne", 2,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q519);
+
+        Question q520 = new Question("OUTDOOR SPORTS",
+                "Sporty halowe", "Sporty ekstremalne", "Sporty na świeżym powietrzu", 3,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q520);
+
+        Question q521 = new Question("ROLLERBLADING",
+                "Jazda na rolkach", "Jazda na deskorolce", "Łyżwiarstwo", 1,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q521);
+
+        Question q522 = new Question("SKY SURFING",
+                "Spadochroniarstwo", "Podniebne akrobacje na desce", "Pływanie na desce", 2,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q522);
+
+        Question q523 = new Question("OBSTACKLE-RACE",
+                "Maraton", "Bieg przez płotki", "Bieg z przeszkodami", 3,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q523);
+
+        Question q524 = new Question("SHOT PUT",
+                "Pchnięcie kulą", "Rzut dyskiem", "Rzut młotem", 1,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q524);
+
+        Question q525 = new Question("SPEEDWAY",
+                "Rajdy samochodowe", "Żużel", "Wyścigi NASCAR", 2,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q525);
+
+        Question q526 = new Question("JAVELIN",
+                "Łucznictwo", "Pchnięcie kulą", "Rzut oszczepem", 3,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q526);
+
+        Question q527 = new Question("HURDLES",
+                "Bieg przez płotki", "Bieg z przeszkodami", "Triatlon", 1,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q527);
+
+        Question q528 = new Question("TUG-OF-WAR",
+                "Podnoszenie ciężarów", "Przeciąganie liny", "Przeciąganie ciężarów", 2,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q528);
+
+        Question q529 = new Question("DECATHLON",
+                "Maraton", "Triatlon", "Dziesięciobój", 3,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q529);
+
+        Question q530 = new Question("SKYDIVING",
+                "Akrobacje spadochronowe", "Podniebne akrobacje na desce", "Latanie szybowcem", 1,
+                Question.DIFFICULTY_HARD, Category.SPORT);
+        insertQuestion(q530);
     }
 
     public void addQuestion(Question question){
