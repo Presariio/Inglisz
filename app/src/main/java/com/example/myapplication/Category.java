@@ -1,7 +1,7 @@
 package com.example.myapplication;
 
 import androidx.annotation.NonNull;
-
+//PRZYPISANIE NUMERU ID DO KAŻDEJ KATEGORII
 public class Category {
     public static final int KOLORY = 1;
     public static final int ZWIERZETA = 2;
@@ -21,11 +21,11 @@ public class Category {
     public Category() {
 
     }
-
+    //KONSTRUKTOR KATEGORII
     public Category(String name) {
         this.name = name;
     }
-
+    //GETTERY I SETTERY
     public int getId() {
         return id;
     }

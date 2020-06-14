@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
+    //ODPOWIADA ZA WCZYTANIE UTWORZONYCH KATEGORII DO QUIZU
     private void loadCategories(){
         QuizDbHelper dbHelper = QuizDbHelper.getInstance(this);
         List<Category> categories = dbHelper.getAllCategories();
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         adapterCategories.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerCategory.setAdapter(adapterCategories);
     }
-
+    //ODPOWIADA ZA WCZYTANIE UTWORZONYCH POZIOMÓW TRUNOŚCI DO QUIZU
     private void loadDifficultyLevels() {
         String[] difficultyLevels = Question.getAllDifficultyLevels();
 
@@ -111,13 +111,13 @@ public class MainActivity extends AppCompatActivity {
         adapterDifficulty.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerDifficulty.setAdapter(adapterDifficulty);
     }
-
+    //WYŚWIETLANIE NAJWYŻSZEGO UZYSKANEGO WYNIKU
     private void loadHighscore() {
         SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         highscore = prefs.getInt(KEY_HIGHSCORE, 0);
         textViewHighscore.setText("Highscore: " + highscore);
     }
-
+    //AKTUALIZOWANIE NAJWYŻSZEGO WYNIKU GRACZA
     private void updateHighscore(int highscoreNew) {
         highscore = highscoreNew;
         textViewHighscore.setText("Highscore: " + highscore);

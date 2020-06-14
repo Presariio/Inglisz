@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 public class Question implements Parcelable {
     public static final String DIFFICULTY_EASY = "Łatwy";
-    public static final String DIFFICULTY_MEDIUM = "Średni";
+    public static final String DIFFICULTY_MEDIUM = "Średni ";
     public static final String DIFFICULTY_HARD = "Trudny";
 
     private int id;
@@ -16,9 +16,9 @@ public class Question implements Parcelable {
     private int answerNr;
     private String difficulty;
     private int categoryID;
-
+    //PUSTY KONSTRUKTOR
     public Question() {}
-
+    //KONSTRUKTOR
     public Question(String question, String option1, String option2, String option3,
                     int answerNr, String difficulty, int categoryID) {
         this.question = question;
@@ -70,7 +70,7 @@ public class Question implements Parcelable {
             return new Question[size];
         }
     };
-
+    //GETTERY I SETTERY POBIERAJĄCE WARTOŚCI DO QUIZU Z BAZY DANYCH
     public int getId() {
         return id;
     }

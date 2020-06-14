@@ -61,7 +61,7 @@ public class QuizActivity extends AppCompatActivity {
     private long backPressedTime;
 
 
-
+    //DOPASOWYWANIE DANYCH Z PYTANIA DO PRZYGOTOWANYCH MIEJSC W LAYOUCIE QUIZU
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -121,7 +121,7 @@ public class QuizActivity extends AppCompatActivity {
                     if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked()) {
                         checkAnswer();
                     } else {
-                        Toast.makeText(QuizActivity.this, "Please select an answer", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(QuizActivity.this, "Proszę zaznaczyć odpowiedź", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     showNextQuestion();
@@ -155,7 +155,7 @@ public class QuizActivity extends AppCompatActivity {
             finishQuiz();
         }
     }
-
+    //ROZPOCZĘCIE ODLICZANIA CZASU NA ODPOWIEDŹ
     private void startCountDown() {
         countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
             @Override
@@ -172,7 +172,7 @@ public class QuizActivity extends AppCompatActivity {
             }
         }.start();
     }
-
+    //ODPOWIEDZIALNE ZA WYŚWIETLANIE LICZNIKA ORAZ ZMIANĘ JEGO KOLORU NA CZERWONY, GDY GRACZOWI ZOSTANIE NA ODPOWIEDŹ 10 SEKUND
     private void updateCountDownText() {
         int minutes = (int) (timeLeftInMillis / 1000) / 60;
         int seconds = (int) (timeLeftInMillis / 1000) % 60;
@@ -187,7 +187,7 @@ public class QuizActivity extends AppCompatActivity {
             textViewCountDown.setTextColor(textColorDefaultCd);
         }
     }
-
+    //SPRAWDZA POPRAWNOŚĆ ODPOWIEDZI I DODAJE PUNKTY W PRZYPADKU POPRAWNEJ ODPOWIEDZI
     private void checkAnswer() {
         answered = true;
 
@@ -203,7 +203,7 @@ public class QuizActivity extends AppCompatActivity {
 
         showSolution();
     }
-
+    //ZMIANA KOLORU ODPOWIEDZI W ZALEŻNOŚCI OD JEJ POPRAWNOŚCI (ZIELONY = POPRAWNA, CZERWONY = BŁĘDNA)
     private void showSolution() {
         rb1.setTextColor(Color.RED);
         rb2.setTextColor(Color.RED);
@@ -230,25 +230,25 @@ public class QuizActivity extends AppCompatActivity {
             buttonConfirmNext.setText("Zakończ");
         }
     }
-
+    //ZAKOŃCZENIE QUIZU I ZAPISANIE WYNIKU
     private void finishQuiz() {
         Intent resultIntent = new Intent();
         resultIntent.putExtra(EXTRA_SCORE, score);
         setResult(RESULT_OK, resultIntent);
         finish();
     }
-
+    //WYCHODZENIE Z QUIZU PO DWUKROTNYM KLIKNIĘCIU "STRZAŁKI WSTECZ"
     @Override
     public void onBackPressed() {
         if(backPressedTime + 2000 > System.currentTimeMillis())
         {
             finishQuiz();
         } else {
-            Toast.makeText(this, "Press back again to finish", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Wciśnij ponownie, aby wyjść", Toast.LENGTH_SHORT).show();
         }
         backPressedTime = System.currentTimeMillis();
     }
-
+    //ZASTOPOWANIE LICZNIKA CZASU PO ZATWIERDZENIU ODPOWIEDZI
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -256,7 +256,7 @@ public class QuizActivity extends AppCompatActivity {
             countDownTimer.cancel();
         }
     }
-
+    //ZAPOBIEGANIE ZEROWANIA LICZNIKA, NR PYTANIA I WYNIKU W TRAKCIE OBRACANIA URZĄDZENIA
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);

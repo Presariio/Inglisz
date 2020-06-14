@@ -6,12 +6,12 @@ public final class QuizContract {
 
     private QuizContract() {
     }
-
+    //MIEJSCE NA WSZYSTKIE PYTANIA
     public static class CategoriesTable implements BaseColumns {
         public static final String TABLE_NAME = "quiz_categories";
         public static final String COLUMN_NAME = "name";
     }
-
+    //WŁAŚCIWOŚCI PYTANIA
     public static class QuestionsTable implements BaseColumns {
         public static final String TABLE_NAME = "quiz_questions";
         public static final String COLUMN_QUESTION = "question";

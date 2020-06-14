@@ -10,17 +10,17 @@ import com.example.myapplication.QuizContract.*;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//ZAINICJOWANIE BAZY DANYCH
 public class QuizDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "MyAwesomeQuiz.db";
-    private static final int DATABASE_VERSION = 15;
+    private static final int DATABASE_VERSION = 15;//PRZY KAŻDEJ AKTUALIZACJI BAZY PYTAŃ JEJ WERSJA WZRASTA O 1.
 
 
 
     private static QuizDbHelper instance;
 
     private SQLiteDatabase db;
-
+    //KONSTRUKTOR PRZY TWORZENIU BAZY DANYCH
     private QuizDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -31,7 +31,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         }
         return instance;
     }
-
+    //WPISYWANIE BAZY DANYCH DO SQLa
     @Override
     public void onCreate(SQLiteDatabase db) {
         this.db = db;
@@ -62,7 +62,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         fillCategoriesTable();
         fillQuestionsTable();
     }
-
+    //AKTUALIZUJE BAZĘ PYTAŃ TWORZĄC JĄ OD NOWA
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + CategoriesTable.TABLE_NAME);
@@ -75,7 +75,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         super.onConfigure(db);
         db.setForeignKeyConstraintsEnabled(true);
     }
-
+    //WCZYTYWANIE KATEGORII
     private void fillCategoriesTable() {
         Category c1 = new Category("Kolory");
         insertCategory(c1);
@@ -117,9 +117,10 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         cv.put(CategoriesTable.COLUMN_NAME, category.getName());
         db.insert(CategoriesTable.TABLE_NAME, null, cv);
     }
-
+    //MIEJSCE NA WPISYWANIE NOWYCH PYTAŃ, KTÓRE WYPEŁNIĄ BAZĘ DANYCH W TRAKCIE URUCHAMIANIA APLIKACJI
     private void fillQuestionsTable() {
-
+    //KAŻDE PYTANIE SKŁADA SIĘ Z TREŚCI PYTANIA, TRZECH ODPOWIEDZI (Z CZEGO TYLKO JEDNA JEST
+        // POPRAWNA), NUMERU ID, POZIOMU TRUDNOŚCI I KATEGORII.
         Question q1 = new Question("BLACK:",
                 "Czarny", "Niebieski", "Pomarańczowy", 1,
                 Question.DIFFICULTY_EASY, Category.KOLORY);
@@ -2784,7 +2785,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
             insertQuestion(question);
         }
     }
-
+    //WSTAWIANIE PYTANIA DO BAZY DANYCH
     private void insertQuestion(Question question) {
         ContentValues cv = new ContentValues();
         cv.put(QuestionsTable.COLUMN_QUESTION, question.getQuestion());
@@ -2796,7 +2797,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         cv.put(QuestionsTable.COLUMN_CATEGORY_ID, question.getCategoryID());
         db.insert(QuestionsTable.TABLE_NAME, null, cv);
     }
-
+    //METODA POZWALAJĄCA NA DOSTĘP DO KATEGORII
     public List<Category> getAllCategories() {
         List<Category> categoryList = new ArrayList<>();
         db = getReadableDatabase();
@@ -2814,7 +2815,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         c.close();
         return categoryList;
     }
-
+    //METODA POZWALAJĄCA NA DOSTĘP DO PYTAŃ Z BAZY DANYCH
     public ArrayList<Question> getAllQuestions() {
         ArrayList<Question> questionList = new ArrayList<>();
         db = getReadableDatabase();
